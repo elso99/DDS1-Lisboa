@@ -1,0 +1,241 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 14564
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Sep 26 18:47:45 BST 2022
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Elias Solhaug
+User home directory: C:/Users/Elias Solhaug
+User working directory: D:/lab_1_gr_13
+User country: 	NO
+User language: 	no
+User locale: 	no_NO
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Elias Solhaug/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Elias Solhaug/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Elias Solhaug/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/lab_1_gr_13/vivado.log
+Vivado journal file location: 	D:/lab_1_gr_13/vivado.jou
+Engine tmp dir: 	D:/lab_1_gr_13/.Xil/Vivado-14564-DESKTOP-SAB7C30
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	207 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,112 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 74 MB (+75339kb) [00:00:05]
+// [Engine Memory]: 1,112 MB (+1014249kb) [00:00:06]
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data.  Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 65 MB. Current time: 9/26/22, 6:47:46 PM BST
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\lab_1_gr_13\lab_1_gr_13.xpr. Version: Vivado v2022.1 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/lab_1_gr_13/lab_1_gr_13.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/lab_1_gr_13/lab_1_gr_13.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/sd/lab_1_gr_13' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+35300kb) [00:00:17]
+// [GUI Memory]: 118 MB (+413kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  2371 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.680 ; gain = 0.000 
+// Project name: lab_1_gr_13; location: D:/lab_1_gr_13; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz
+// z (cr): Project is Read-Only: addNotify
+// a (cr): Critical Messages: addNotify
+// [GUI Memory]: 126 MB (+2601kb) [00:00:21]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceOtoP.Project_SAVE_PROJECT_AS, "Save Project As..."); // a
+dismissDialog("Project is Read-Only"); // z
+// G (cr): Invalid Top Module: addNotify
+selectRadioButton(PAResourceEtoH.FloatingTopDialog_SPECIFY_NEW_TOP_MODULE, "Specify a new top module:"); // a
+selectButton(PAResourceEtoH.FloatingTopDialog_SELECT_TOP_MODULE_OF_YOUR_DESIGN, (String) null); // t
+// bz (G):  Analyze source files for top modules : addNotify
+// S (G): Select Top Module: addNotify
+selectList(PAResourceQtoS.SelectTopModuleDialog_SELECT_TOP_MODULE, "fpga_basicIO", 0); // T
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select Top Module"); // S
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Project 1-228] Project 'lab_1_gr_13' is read-only. To save your work, please use the 'File | Save Project As...' command first.  
+/*
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.2 (64-bit)
+# SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Current time: Mon Sep 26 18:48:23 BST 2022
+# Process ID (PID): 14564
+# OS: Windows 10
+# User: Elias Solhaug
+# Project: lab_1_gr_13
+# Part: xc7a35tcpg236-1
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+ui.frmwork.cmd.CommandFailedException:  ERROR: [Project 1-228] Project 'lab_1_gr_13' is read-only. To save your work, please use the 'File | Save Project As...' command first.
+ (See D:/lab_1_gr_13/vivado_pid14564.debug)
+*/
+// Tcl Message: set_property top fpga_basicIO [current_fileset] 
+// Tcl Message: ERROR: [Project 1-228] Project 'lab_1_gr_13' is read-only. To save your work, please use the 'File | Save Project As...' command first. 
+// HOptionPane Error: 'ERROR: [Project 1-228] Project 'lab_1_gr_13' is read-only. To save your work, please use the 'File | Save Project As...' command first. (Vivado v2020.2 (64-bit))'
+dismissDialog("Invalid Top Module"); // G
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a
+// Elapsed time: 12 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+selectButton(PAResourceItoN.MainToolbarMgr_OPEN, (String) null); // aF
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save As..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aD (cr): Save Project As: addNotify
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "lab1"); // aa
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // t
+// Elapsed time: 53 seconds
+setFolderChooser("C:/Users/Elias Solhaug/Documents/DDS1/lab0");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'o' command handler elapsed time: 66 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: save_project_as lab1 {C:/Users/Elias Solhaug/Documents/DDS1/lab0/lab1} -force 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bz (cr):  Save Project As : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_RENAME
+// bz (cr):  Save Constraints : addNotify
+dismissDialog("Save Constraints"); // bz
+// G (cr): Invalid Top Module: addNotify
+selectRadioButton(PAResourceEtoH.FloatingTopDialog_SPECIFY_NEW_TOP_MODULE, "Specify a new top module:"); // a
+selectButton(PAResourceEtoH.FloatingTopDialog_SELECT_TOP_MODULE_OF_YOUR_DESIGN, (String) null); // t
+// bz (G):  Analyze source files for top modules : addNotify
+// S (G): Select Top Module: addNotify
+selectList(PAResourceQtoS.SelectTopModuleDialog_SELECT_TOP_MODULE, "fpga_basicIO", 0); // T
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 141 MB (+9324kb) [00:02:54]
+dismissDialog("Select Top Module"); // S
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top fpga_basicIO [current_fileset] 
+dismissDialog("Invalid Top Module"); // G
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, circuito.vhd]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, circuito.vhd]", 2, false, false, false, false, false, true); // D - Double Click
+// ag (cr): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a
+dismissDialog("Unable to Open File"); // ag
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_disp7 : disp7(mixed) (disp7.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_disp7 : disp7(mixed) (disp7.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_clkdiv : clkdiv(mixed) (clkdiv.vhd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_clkdiv : clkdiv(mixed) (clkdiv.vhd)]", 11, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_circuito : xil_defaultlib.circuito]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_circuito : xil_defaultlib.circuito]", 12, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_clkdiv : clkdiv(mixed) (clkdiv.vhd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_clkdiv : clkdiv(mixed) (clkdiv.vhd)]", 11, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_clkdiv : clkdiv(mixed) (clkdiv.vhd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_clkdiv : clkdiv(mixed) (clkdiv.vhd)]", 11, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_circuito : xil_defaultlib.circuito]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_circuito : xil_defaultlib.circuito]", 12, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga_basicIO(Behavioral) (fpga_basicIO.vhd), inst_circuito : xil_defaultlib.circuito]", 12, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
