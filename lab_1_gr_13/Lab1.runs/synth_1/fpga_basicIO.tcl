@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/sondr/Lab1/Lab1.runs/synth_1/fpga_basicIO.tcl"
+  variable script "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.runs/synth_1/fpga_basicIO.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,31 +70,29 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/sondr/Lab1/Lab1.cache/wt [current_project]
-set_property parent.project_path C:/Users/sondr/Lab1/Lab1.xpr [current_project]
+set_property webtalk.parent_dir C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.cache/wt [current_project]
+set_property parent.project_path C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo c:/Users/sondr/Lab1/Lab1.cache/ip [current_project]
+set_property ip_output_repo c:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  {C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Lab1 notepad/circuito.vhd}
-  C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Downloads/lab0Files/lab0Files/clkdiv.vhd
-  {C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Lab1 notepad/control.vhd}
-  {C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Lab1 notepad/datapath.vhd}
-  C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Downloads/lab0Files/lab0Files/disp7.vhd
-  C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Downloads/lab0Files/lab0Files/hex2disp.vhd
-  {C:/Users/sondr/Lab1/Lab1.srcs/sources_1/imports/Downloads/Lab1-notepad/Lab1 notepad/fpga_basicIO.vhd}
+  {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Lab1 notepad/circuito.vhd}
+  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Downloads/lab0Files/lab0Files/clkdiv.vhd
+  {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Lab1 notepad/control.vhd}
+  {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Lab1 notepad/datapath.vhd}
+  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Downloads/lab0Files/lab0Files/disp7.vhd
+  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Downloads/lab0Files/lab0Files/hex2disp.vhd
+  {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Downloads/Lab1-notepad/Lab1 notepad/fpga_basicIO.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -105,12 +103,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/sondr/Lab1/Lab1.srcs/constrs_1/imports/lab0Files/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/sondr/Lab1/Lab1.srcs/constrs_1/imports/lab0Files/Basys3_Master.xdc]
+read_xdc C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/constrs_1/imports/lab0Files/Basys3_Master.xdc
+set_property used_in_implementation false [get_files C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/constrs_1/imports/lab0Files/Basys3_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/sondr/Lab1/Lab1.srcs/utils_1/imports/synth_1/fpga_basicIO.dcp
+read_checkpoint -auto_incremental -incremental C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/utils_1/imports/synth_1/fpga_basicIO.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -56,6 +56,7 @@ begin
         oper   <= "000";
         en_r1 <= '0';
         en_r2 <= '0';
+        s_disp <= 'X';
 
       when s_add =>
         nextstate <= s_end;
@@ -104,6 +105,7 @@ begin
         oper      <= "111";
         en_r1     <= '1';
         en_r2     <= '0';
+        s_disp <= 'X';
       
       when s_end =>
         if instr = "00000" then
@@ -111,7 +113,8 @@ begin
         end if;
         oper   <= "000";
         en_r1  <= '0';
-        en_r1  <= '0';
+        en_r2  <= '0';
+        s_disp <= 'X';
 
     end case;
   end process;

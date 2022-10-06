@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Wed Sep 28 17:05:56 2022
-| Host         : LAPTOP-D0N4R0A7 running 64-bit major release  (build 9200)
+| Date         : Thu Oct  6 14:32:54 2022
+| Host         : DESKTOP-SAB7C30 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fpga_basicIO_utilization_synth.rpt -pb fpga_basicIO_utilization_synth.pb
 | Design       : fpga_basicIO
 | Device       : xc7a35tcpg236-1
@@ -31,12 +31,12 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   99 |     0 |          0 |     20800 |  0.48 |
-|   LUT as Logic          |   99 |     0 |          0 |     20800 |  0.48 |
+| Slice LUTs*             |  110 |     0 |          0 |     20800 |  0.53 |
+|   LUT as Logic          |  110 |     0 |          0 |     20800 |  0.53 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |   77 |     0 |          0 |     41600 |  0.19 |
+| Slice Registers         |   75 |     0 |          0 |     41600 |  0.18 |
 |   Register as Flip Flop |   75 |     0 |          0 |     41600 |  0.18 |
-|   Register as Latch     |    2 |     0 |          0 |     41600 | <0.01 |
+|   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
 | F7 Muxes                |    1 |     0 |          0 |     16300 | <0.01 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
@@ -56,7 +56,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 2     |          Yes |           - |        Reset |
+| 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 75    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -153,16 +153,15 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |   75 |        Flop & Latch |
 | LUT6     |   42 |                 LUT |
+| LUT5     |   34 |                 LUT |
 | LUT2     |   29 |                 LUT |
 | OBUF     |   28 |                  IO |
-| LUT5     |   22 |                 LUT |
 | IBUF     |   22 |                  IO |
-| LUT3     |   16 |                 LUT |
 | CARRY4   |    9 |          CarryLogic |
 | LUT4     |    8 |                 LUT |
+| LUT3     |    3 |                 LUT |
 | BUFG     |    3 |               Clock |
 | LUT1     |    2 |                 LUT |
-| LDCE     |    2 |        Flop & Latch |
 | MUXF7    |    1 |               MuxFx |
 | DSP48E1  |    1 |    Block Arithmetic |
 +----------+------+---------------------+
