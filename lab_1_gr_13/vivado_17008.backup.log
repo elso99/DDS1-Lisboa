@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Oct 11 17:16:39 2022
-# Process ID: 1460
+# Start of session at: Fri Oct  7 12:58:56 2022
+# Process ID: 17008
 # Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1608 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_1_gr_13\Lab1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6192 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_1_gr_13\Lab1.xpr
 # Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/vivado.log
 # Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13\vivado.jou
 # Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
@@ -66,7 +66,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.340 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1729.414 ; gain = 0.000
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 11 18:00:26 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  7 15:33:28 2022...

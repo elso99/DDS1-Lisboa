@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Oct 11 17:16:39 2022
-# Process ID: 1460
+# Start of session at: Thu Oct  6 22:13:19 2022
+# Process ID: 21424
 # Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1608 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_1_gr_13\Lab1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15156 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_1_gr_13\Lab1.xpr
 # Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/vivado.log
 # Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13\vivado.jou
 # Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
@@ -66,7 +66,26 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.340 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1566.891 ; gain = 0.000
 update_compile_order -fileset sources_1
+archive_project C:/Studier/IST/DDS/lab1/L1.xpr.zip -temp_dir C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/.Xil/Vivado-21424-DESKTOP-SAB7C30 -force -exclude_run_results
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/.Xil/Vivado-21424-DESKTOP-SAB7C30' for archiving project
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/.Xil/Vivado-21424-DESKTOP-SAB7C30/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Project 1-1161] Replacing file C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/.Xil/Vivado-21424-DESKTOP-SAB7C30/PrjAr/_X_/Lab1.srcs/utils_1/imports/synth_1/fpga_basicIO.dcp with file C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/.Xil/Vivado-21424-DESKTOP-SAB7C30/PrjAr/_X_/Lab1.runs/synth_1/fpga_basicIO.dcp
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Studier/IST/DDS/lab1/L1.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 11 18:00:26 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  7 12:49:41 2022...
