@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Lab1 notepad/circuito.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'circuito'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Lab1 notepad/control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'control'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sources_1/imports/Lab1 notepad/datapath.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'datapath'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_1_gr_13/Lab1.srcs/sim_1/imports/Lab1 notepad/circuito_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'circuito_tb'

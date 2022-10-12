@@ -15,8 +15,9 @@ architecture behavioral of datapath is
  signal Br, Bi : signed (27 downto 0);
  signal mult1_in1, mult2_in1 : signed (7 downto 0);
  signal mult1_in2, mult2_in2 : signed (15 downto 0);
- signal mult_reg_1, mult_reg_2 : signed (27 downto 0);
- signal alu_reg_1, alu_reg_2, yti, ytr, alu1_in1, alu1_in2, alu2_in1, alu2_in2, do_alu_1, do_alu_2, do_mult_1, do_mult_2 : signed (27 downto 0); 
+ signal mult_reg_1, mult_reg_2 : signed (23 downto 0);
+ signal alu_reg_1, alu_reg_2, yti, ytr, alu1_in1, alu1_in2, alu2_in1, alu2_in2, do_alu_1, do_alu_2  : signed(27 downto 0); 
+ signal do_mult_1, do_mult_2 : signed (23 downto 0); 
  signal do_div_yti, do_div_ytr : signed (31 downto 0);
  -- this signal initialization is only considered for simulation
 Begin
@@ -27,14 +28,18 @@ mult1_in2 <= Xr when (oper="010") else
 mult2_in1 <= Mi;
 mult2_in2 <= Xi when (oper="010") else
                 Xr;
-alu1_in1 <= mult_reg_1 when (oper="011") else
+alu1_in1 <= "1111"&mult_reg_1 when (oper="011" and mult_reg_1(23)='1') else
+            "0000"&mult_reg_1 when (oper="011" and mult_reg_1(23)='0') else
             alu_reg_1;
-alu1_in2 <= mult_reg_2 when (oper="011") else
+alu1_in2 <= "1111"&mult_reg_2 when (oper="011" and mult_reg_2(23)='1') else
+            "0000"&mult_reg_2 when (oper="011" and mult_reg_2(23)='0') else
             Br when (oper="100") else
             ytr;
-alu2_in1 <= mult_reg_2 when (oper="011") else
+alu2_in1 <= "1111"&mult_reg_2 when (oper="011" and mult_reg_2(23)='1') else
+            "0000"&mult_reg_2 when (oper="011" and mult_reg_2(23)='0') else
             alu_reg_2;
-alu2_in2 <= mult_reg_1 when (oper="011") else
+alu2_in2 <= "1111"&mult_reg_1 when (oper="011" and mult_reg_1(23)='1') else
+            "0000"&mult_reg_1 when (oper="011" and mult_reg_1(23)='0') else
             Bi when (oper="101") else
             yti;
 nr_out <= std_logic_vector(do_div_ytr) when (sw_out='1') else
