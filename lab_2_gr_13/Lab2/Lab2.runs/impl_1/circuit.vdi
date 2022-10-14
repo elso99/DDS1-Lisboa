@@ -1,0 +1,456 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 14 14:11:48 2022
+# Process ID: 13812
+# Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1
+# Command line: vivado.exe -log circuit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source circuit.tcl -notrace
+# Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit.vdi
+# Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1\vivado.jou
+# Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
+#-----------------------------------------------------------
+source circuit.tcl -notrace
+Command: link_design -top circuit -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1278.984 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_memOUT[1]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_memOUT[0]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[31]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[30]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[29]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[28]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[27]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[26]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[25]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[24]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[23]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[22]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[21]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[20]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[19]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[18]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[17]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[16]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[15]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[14]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[13]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[12]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[11]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[10]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[9]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[8]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[7]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[6]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[5]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[4]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[3]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[2]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[1]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dataOUT[0]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports * -filter { NAME =~  "dataOUT*" && DIRECTION == "OUT" }]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports * -filter { NAME =~  "addr_memOUT*" && DIRECTION == "OUT" }]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1278.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 37 Warnings, 37 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1278.984 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1278.984 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1cf585183
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1369.254 ; gain = 90.270
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1cf585183
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1684.836 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1cf585183
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1684.836 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1ef41b1f7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1684.836 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1ef41b1f7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1684.836 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1ef41b1f7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1684.836 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1ef41b1f7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1684.836 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               8  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1ae7705e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1684.836 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 1ae7705e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1ae7705e2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.764 . Memory (MB): peak = 1809.988 ; gain = 125.152
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1ae7705e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1809.988 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1ae7705e2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 37 Warnings, 37 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1809.988 ; gain = 531.004
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1809.988 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file circuit_drc_opted.rpt -pb circuit_drc_opted.pb -rpx circuit_drc_opted.rpx
+Command: report_drc -file circuit_drc_opted.rpt -pb circuit_drc_opted.pb -rpx circuit_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 182fdc979
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 123 I/O ports
+ while the target  device: 7a35t package: cpg236, contains only 96 available user I/O. The target device has 106 usable I/O pins of which 10 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+ERROR: [Place 30-435] High Range (HR) banks 14, 16, 34 and 35 have insufficient capacity to support the IOSTANDARDs defined for this design.  There are 131 IO available in the High Range (HR) banks but this design has 133 IO that require placement in an High Range (HR) bank. Please review the IOSTANDARD specifications for the IO below that require placement in an High Range (HR) bank to determine if the IOSTANDARDs need to be modified or the target device needs to change to support the design's requirements:
+	1. addr_memIN[0] { LVCMOS33 }
+	2. addr_memIN[1] { LVCMOS33 }
+	3. addr_memIN[2] { LVCMOS33 }
+	4. addr_memIN[3] { LVCMOS33 }
+	5. addr_memIN[4] { LVCMOS33 }
+	6. addr_memOut[0] { LVCMOS33 }
+	7. addr_memOut[1] { LVCMOS33 }
+	8. clk { LVCMOS33 }
+	9. done { LVCMOS33 }
+	10. in_val[0] { LVCMOS33 }
+	11. in_val[10] { LVCMOS33 }
+	12. in_val[11] { LVCMOS33 }
+	13. in_val[12] { LVCMOS33 }
+	14. in_val[13] { LVCMOS33 }
+	15. in_val[14] { LVCMOS33 }
+	16. in_val[15] { LVCMOS33 }
+	17. in_val[16] { LVCMOS33 }
+	18. in_val[17] { LVCMOS33 }
+	19. in_val[18] { LVCMOS33 }
+	20. in_val[19] { LVCMOS33 }
+	21. in_val[1] { LVCMOS33 }
+	22. in_val[20] { LVCMOS33 }
+	23. in_val[21] { LVCMOS33 }
+	24. in_val[22] { LVCMOS33 }
+	25. in_val[23] { LVCMOS33 }
+	26. in_val[24] { LVCMOS33 }
+	27. in_val[25] { LVCMOS33 }
+	28. in_val[26] { LVCMOS33 }
+	29. in_val[27] { LVCMOS33 }
+	30. in_val[28] { LVCMOS33 }
+	31. in_val[29] { LVCMOS33 }
+	32. in_val[2] { LVCMOS33 }
+	33. in_val[30] { LVCMOS33 }
+	34. in_val[31] { LVCMOS33 }
+	35. in_val[3] { LVCMOS33 }
+	36. in_val[4] { LVCMOS33 }
+	37. in_val[5] { LVCMOS33 }
+	38. in_val[6] { LVCMOS33 }
+	39. in_val[7] { LVCMOS33 }
+	40. in_val[8] { LVCMOS33 }
+	41. in_val[9] { LVCMOS33 }
+	42. nr_output[0] { LVCMOS33 }
+	43. nr_output[10] { LVCMOS33 }
+	44. nr_output[11] { LVCMOS33 }
+	45. nr_output[12] { LVCMOS33 }
+	46. nr_output[13] { LVCMOS33 }
+	47. nr_output[14] { LVCMOS33 }
+	48. nr_output[15] { LVCMOS33 }
+	49. nr_output[16] { LVCMOS33 }
+	50. nr_output[17] { LVCMOS33 }
+	51. nr_output[18] { LVCMOS33 }
+	52. nr_output[19] { LVCMOS33 }
+	53. nr_output[1] { LVCMOS33 }
+	54. nr_output[20] { LVCMOS33 }
+	55. nr_output[21] { LVCMOS33 }
+	56. nr_output[22] { LVCMOS33 }
+	57. nr_output[23] { LVCMOS33 }
+	58. nr_output[24] { LVCMOS33 }
+	59. nr_output[25] { LVCMOS33 }
+	60. nr_output[26] { LVCMOS33 }
+	61. nr_output[27] { LVCMOS33 }
+	62. nr_output[28] { LVCMOS33 }
+	63. nr_output[29] { LVCMOS33 }
+	64. nr_output[2] { LVCMOS33 }
+	65. nr_output[30] { LVCMOS33 }
+	66. nr_output[31] { LVCMOS33 }
+	67. nr_output[3] { LVCMOS33 }
+	68. nr_output[4] { LVCMOS33 }
+	69. nr_output[5] { LVCMOS33 }
+	70. nr_output[6] { LVCMOS33 }
+	71. nr_output[7] { LVCMOS33 }
+	72. nr_output[8] { LVCMOS33 }
+	73. nr_output[9] { LVCMOS33 }
+	74. rst { LVCMOS33 }
+	75. sel_set[0] { LVCMOS33 }
+	76. sel_set[1] { LVCMOS33 }
+	77. temp_val_Vi[0] { LVCMOS33 }
+	78. temp_val_Vi[10] { LVCMOS33 }
+	79. temp_val_Vi[11] { LVCMOS33 }
+	80. temp_val_Vi[12] { LVCMOS33 }
+	81. temp_val_Vi[13] { LVCMOS33 }
+	82. temp_val_Vi[14] { LVCMOS33 }
+	83. temp_val_Vi[15] { LVCMOS33 }
+	84. temp_val_Vi[16] { LVCMOS33 }
+	85. temp_val_Vi[17] { LVCMOS33 }
+	86. temp_val_Vi[18] { LVCMOS33 }
+	87. temp_val_Vi[19] { LVCMOS33 }
+	88. temp_val_Vi[1] { LVCMOS33 }
+	89. temp_val_Vi[20] { LVCMOS33 }
+	90. temp_val_Vi[21] { LVCMOS33 }
+	91. temp_val_Vi[22] { LVCMOS33 }
+	92. temp_val_Vi[23] { LVCMOS33 }
+	93. temp_val_Vi[24] { LVCMOS33 }
+	94. temp_val_Vi[25] { LVCMOS33 }
+	95. temp_val_Vi[26] { LVCMOS33 }
+	96. temp_val_Vi[27] { LVCMOS33 }
+	97. temp_val_Vi[2] { LVCMOS33 }
+	98. temp_val_Vi[3] { LVCMOS33 }
+	99. temp_val_Vi[4] { LVCMOS33 }
+	100. temp_val_Vi[5] { LVCMOS33 }
+	101. temp_val_Vi[6] { LVCMOS33 }
+	102. temp_val_Vi[7] { LVCMOS33 }
+	103. temp_val_Vi[8] { LVCMOS33 }
+	104. temp_val_Vi[9] { LVCMOS33 }
+	105. temp_val_Vr[0] { LVCMOS33 }
+	106. temp_val_Vr[10] { LVCMOS33 }
+	107. temp_val_Vr[11] { LVCMOS33 }
+	108. temp_val_Vr[12] { LVCMOS33 }
+	109. temp_val_Vr[13] { LVCMOS33 }
+	110. temp_val_Vr[14] { LVCMOS33 }
+	111. temp_val_Vr[15] { LVCMOS33 }
+	112. temp_val_Vr[16] { LVCMOS33 }
+	113. temp_val_Vr[17] { LVCMOS33 }
+	114. temp_val_Vr[18] { LVCMOS33 }
+	115. temp_val_Vr[19] { LVCMOS33 }
+	116. temp_val_Vr[1] { LVCMOS33 }
+	117. temp_val_Vr[20] { LVCMOS33 }
+	118. temp_val_Vr[21] { LVCMOS33 }
+	119. temp_val_Vr[22] { LVCMOS33 }
+	120. temp_val_Vr[23] { LVCMOS33 }
+	121. temp_val_Vr[24] { LVCMOS33 }
+	122. temp_val_Vr[25] { LVCMOS33 }
+	123. temp_val_Vr[26] { LVCMOS33 }
+	124. temp_val_Vr[27] { LVCMOS33 }
+	125. temp_val_Vr[2] { LVCMOS33 }
+	126. temp_val_Vr[3] { LVCMOS33 }
+	127. temp_val_Vr[4] { LVCMOS33 }
+	128. temp_val_Vr[5] { LVCMOS33 }
+	129. temp_val_Vr[6] { LVCMOS33 }
+	130. temp_val_Vr[7] { LVCMOS33 }
+	131. temp_val_Vr[8] { LVCMOS33 }
+	132. temp_val_Vr[9] { LVCMOS33 }
+	133. we { LVCMOS33 }
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1856149c2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1856149c2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1809.988 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1856149c2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 1809.988 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 37 Warnings, 37 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 14 14:12:14 2022...

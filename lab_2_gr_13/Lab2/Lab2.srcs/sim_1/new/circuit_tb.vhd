@@ -1,44 +1,45 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
-
 entity circuit_tb is
 end circuit_tb;
 
 architecture behavior of circuit_tb is
 
-  -- Component Declaration for the Unit Under Test (UUT)
-
   component circuit
     port (
-      clk         : in std_logic;
-      rst         : in std_logic;
-      sel_set     : in std_logic_vector (1 downto 0);
-      done        : out std_logic;
-      nr_output   : out std_logic_vector (31 downto 0);
-      addr_memIN  : inout std_logic_vector (8 downto 0);
-      addr_memOut : inout std_logic_vector (8 downto 0);
-      we          : inout std_logic
+      clk         : in std_logic; -- OK
+      rst         : in std_logic; -- OK
+      sel_set     : in std_logic_vector (1 downto 0); -- select signal for different sets in memIN. Not mandatory
+      done        : out std_logic; -- OK
+      nr_output   : out std_logic_vector (31 downto 0); -- OK
+      addr_memIN  : out std_logic_vector (4 downto 0); -- OK
+      addr_memOut : out std_logic_vector (1 downto 0); -- OK
+      we          : out std_logic; -- OK
+      temp_val_Vi    : out std_logic_vector(27 downto 0); -- Not mandatory
+      temp_val_Vr    : out std_logic_vector(27 downto 0); -- Not mandatory
+      in_val         : out std_logic_vector(31 downto 0) -- Not mandatory
     );
   end component;
 
   -- inputs
-  signal clk         : std_logic                        :='0';
-  signal rst         : std_logic                        :='1';
-  signal sel_set     : std_logic_vector (1 downto 0)    :="00";
+  signal clk            : std_logic                         :='0';
+  signal rst            : std_logic                         :='1';
+  signal sel_set        : std_logic_vector (1 downto 0)     :="00";
   
   -- outputs
   signal done        : std_logic;
   signal nr_output   : std_logic_vector (31 downto 0);
-  signal addr_memIN  : std_logic_vector (8 downto 0);
-  signal addr_memOut : std_logic_vector (8 downto 0);
+  signal addr_memIN  : std_logic_vector (4 downto 0);
+  signal addr_memOut : std_logic_vector (1 downto 0);
   signal we          : std_logic;
+  signal temp_val_Vi    : std_logic_vector(27 downto 0);
+  signal temp_val_Vr    : std_logic_vector(27 downto 0);
+  signal in_val          : std_logic_vector(31 downto 0);
   
   -- Clock period definitions
-  constant clk_period : time := 20 ns;
+constant clk_period : time := 10 ns;
+constant p : time := 1500ns; -- some buffer added
 
 begin
 
@@ -51,7 +52,10 @@ begin
     nr_output   => nr_output,
     addr_memIN  => addr_memIN,
     addr_memOut => addr_memOut,
-    we          => we
+    we          => we,
+    temp_val_Vi => temp_val_Vi,
+    temp_val_Vr => temp_val_Vr,
+    in_val      => in_val
     );
 
   -- Clock definition
@@ -61,15 +65,26 @@ begin
   stim_proc : process
   begin
     -- hold reset state for 100 ns.
-    wait for 100 ns;
-
-    wait for clk_period;
-
+    wait for 80 ns;
     -- insert stimulus here
     -- note that input signals should never change at the positive edge of the clock
-    rst   <= '0' after 80 ns;
-    sel_set <= "01" after 40 ns;          
-
+    sel_set     <=  "00" after 40 ns,
+                    "01" after  p + 40 ns,
+                    "10" after  2*p + 40 ns,
+                    "11" after  3*p + 40 ns;
+    
+    rst         <=  '0'  after 60 ns,          
+                    '1'  after  p,    
+                    '0'  after  p + 80 ns,
+                    '1'  after  2*p,   
+                    '0'  after  2*p + 80 ns,
+                    '1'  after  3*p,   --testing inerrupt begin
+                    '0'  after  3*p + 80 ns,
+                    '1'  after  3*p + 500 ns,   
+                    '0'  after  3*p + 580 ns, -- end
+                    '1'  after  4*p,
+                    '0'  after  4*p + 80 ns,
+                    '1'  after  5*p;
     wait;
   end process;
 

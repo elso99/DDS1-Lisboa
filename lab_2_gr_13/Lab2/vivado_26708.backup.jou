@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 14 00:11:40 2022
+# Process ID: 26708
+# Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27520 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_2_gr_13\Lab2\Lab2.xpr
+# Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/vivado.log
+# Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2\vivado.jou
+# Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.xpr
+launch_simulation
+source circuit_tb.tcl
+close_sim
+launch_simulation
+source circuit_tb.tcl

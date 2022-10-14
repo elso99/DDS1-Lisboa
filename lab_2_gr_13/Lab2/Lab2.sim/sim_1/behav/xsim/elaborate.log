@@ -4,4 +4,31 @@ Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.std_logic_unsigned
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,sim_de...]
+Compiling architecture ramb16_s36_v of entity unisim.RAMB16_S36 [\RAMB16_S36(0,35)(0,35)(1,11)(0,...]
+Compiling architecture gen of entity xil_defaultlib.MemOUT [memout_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_00="111...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(init_00="1111111110000...]
+Compiling architecture ramb16_s36_v of entity unisim.RAMB16_S36 [\RAMB16_S36(init_00="11111111100...]
+Compiling architecture gen11 of entity xil_defaultlib.MemIN [memin_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.circuit [circuit_default]
+Compiling architecture behavior of entity xil_defaultlib.circuit_tb
+Built simulation snapshot circuit_tb_behav

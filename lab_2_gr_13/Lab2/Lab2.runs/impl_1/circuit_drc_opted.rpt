@@ -1,0 +1,214 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Oct 14 14:12:13 2022
+| Host         : DESKTOP-SAB7C30 running 64-bit major release  (build 9200)
+| Command      : report_drc -file circuit_drc_opted.rpt -pb circuit_drc_opted.pb -rpx circuit_drc_opted.rpx
+| Design       : circuit
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+------------------+----------------------------+------------+
+| Rule      | Severity         | Description                | Violations |
++-----------+------------------+----------------------------+------------+
+| PLIOSTD-2 | Error            | IOSTANDARD violations      | 1          |
+| UCIO-1    | Critical Warning | Unconstrained Logical Port | 1          |
+| DPIP-1    | Warning          | Input pipelining           | 2          |
+| DPOP-2    | Warning          | MREG Output pipelining     | 2          |
+| IOCNT-1   | Warning          | Number of IOs              | 1          |
++-----------+------------------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLIOSTD-2#1 Error
+IOSTANDARD violations  
+High Range (HR) banks 14, 16, 34 and 35 have insufficient capacity to support the IOSTANDARDs defined for this design. There are 131 IO available in the High Range (HR) banks but this design has 133 IO that require placement in an High Range (HR) bank. Please review the IOSTANDARD specifications for the IO below that require placement in an High Range (HR) bank to determine if the IOSTANDARDs need to be modified or the target device needs to change to support the design's requirements: 
+    1. addr_memIN[0] { LVCMOS33 }
+    2. addr_memIN[1] { LVCMOS33 }
+    3. addr_memIN[2] { LVCMOS33 }
+    4. addr_memIN[3] { LVCMOS33 }
+    5. addr_memIN[4] { LVCMOS33 }
+    6. addr_memOut[0] { LVCMOS33 }
+    7. addr_memOut[1] { LVCMOS33 }
+    8. clk { LVCMOS33 }
+    9. done { LVCMOS33 }
+    10. in_val[0] { LVCMOS33 }
+    11. in_val[10] { LVCMOS33 }
+    12. in_val[11] { LVCMOS33 }
+    13. in_val[12] { LVCMOS33 }
+    14. in_val[13] { LVCMOS33 }
+    15. in_val[14] { LVCMOS33 }
+    16. in_val[15] { LVCMOS33 }
+    17. in_val[16] { LVCMOS33 }
+    18. in_val[17] { LVCMOS33 }
+    19. in_val[18] { LVCMOS33 }
+    20. in_val[19] { LVCMOS33 }
+    21. in_val[1] { LVCMOS33 }
+    22. in_val[20] { LVCMOS33 }
+    23. in_val[21] { LVCMOS33 }
+    24. in_val[22] { LVCMOS33 }
+    25. in_val[23] { LVCMOS33 }
+    26. in_val[24] { LVCMOS33 }
+    27. in_val[25] { LVCMOS33 }
+    28. in_val[26] { LVCMOS33 }
+    29. in_val[27] { LVCMOS33 }
+    30. in_val[28] { LVCMOS33 }
+    31. in_val[29] { LVCMOS33 }
+    32. in_val[2] { LVCMOS33 }
+    33. in_val[30] { LVCMOS33 }
+    34. in_val[31] { LVCMOS33 }
+    35. in_val[3] { LVCMOS33 }
+    36. in_val[4] { LVCMOS33 }
+    37. in_val[5] { LVCMOS33 }
+    38. in_val[6] { LVCMOS33 }
+    39. in_val[7] { LVCMOS33 }
+    40. in_val[8] { LVCMOS33 }
+    41. in_val[9] { LVCMOS33 }
+    42. nr_output[0] { LVCMOS33 }
+    43. nr_output[10] { LVCMOS33 }
+    44. nr_output[11] { LVCMOS33 }
+    45. nr_output[12] { LVCMOS33 }
+    46. nr_output[13] { LVCMOS33 }
+    47. nr_output[14] { LVCMOS33 }
+    48. nr_output[15] { LVCMOS33 }
+    49. nr_output[16] { LVCMOS33 }
+    50. nr_output[17] { LVCMOS33 }
+    51. nr_output[18] { LVCMOS33 }
+    52. nr_output[19] { LVCMOS33 }
+    53. nr_output[1] { LVCMOS33 }
+    54. nr_output[20] { LVCMOS33 }
+    55. nr_output[21] { LVCMOS33 }
+    56. nr_output[22] { LVCMOS33 }
+    57. nr_output[23] { LVCMOS33 }
+    58. nr_output[24] { LVCMOS33 }
+    59. nr_output[25] { LVCMOS33 }
+    60. nr_output[26] { LVCMOS33 }
+    61. nr_output[27] { LVCMOS33 }
+    62. nr_output[28] { LVCMOS33 }
+    63. nr_output[29] { LVCMOS33 }
+    64. nr_output[2] { LVCMOS33 }
+    65. nr_output[30] { LVCMOS33 }
+    66. nr_output[31] { LVCMOS33 }
+    67. nr_output[3] { LVCMOS33 }
+    68. nr_output[4] { LVCMOS33 }
+    69. nr_output[5] { LVCMOS33 }
+    70. nr_output[6] { LVCMOS33 }
+    71. nr_output[7] { LVCMOS33 }
+    72. nr_output[8] { LVCMOS33 }
+    73. nr_output[9] { LVCMOS33 }
+    74. rst { LVCMOS33 }
+    75. sel_set[0] { LVCMOS33 }
+    76. sel_set[1] { LVCMOS33 }
+    77. temp_val_Vi[0] { LVCMOS33 }
+    78. temp_val_Vi[10] { LVCMOS33 }
+    79. temp_val_Vi[11] { LVCMOS33 }
+    80. temp_val_Vi[12] { LVCMOS33 }
+    81. temp_val_Vi[13] { LVCMOS33 }
+    82. temp_val_Vi[14] { LVCMOS33 }
+    83. temp_val_Vi[15] { LVCMOS33 }
+    84. temp_val_Vi[16] { LVCMOS33 }
+    85. temp_val_Vi[17] { LVCMOS33 }
+    86. temp_val_Vi[18] { LVCMOS33 }
+    87. temp_val_Vi[19] { LVCMOS33 }
+    88. temp_val_Vi[1] { LVCMOS33 }
+    89. temp_val_Vi[20] { LVCMOS33 }
+    90. temp_val_Vi[21] { LVCMOS33 }
+    91. temp_val_Vi[22] { LVCMOS33 }
+    92. temp_val_Vi[23] { LVCMOS33 }
+    93. temp_val_Vi[24] { LVCMOS33 }
+    94. temp_val_Vi[25] { LVCMOS33 }
+    95. temp_val_Vi[26] { LVCMOS33 }
+    96. temp_val_Vi[27] { LVCMOS33 }
+    97. temp_val_Vi[2] { LVCMOS33 }
+    98. temp_val_Vi[3] { LVCMOS33 }
+    99. temp_val_Vi[4] { LVCMOS33 }
+    100. temp_val_Vi[5] { LVCMOS33 }
+    101. temp_val_Vi[6] { LVCMOS33 }
+    102. temp_val_Vi[7] { LVCMOS33 }
+    103. temp_val_Vi[8] { LVCMOS33 }
+    104. temp_val_Vi[9] { LVCMOS33 }
+    105. temp_val_Vr[0] { LVCMOS33 }
+    106. temp_val_Vr[10] { LVCMOS33 }
+    107. temp_val_Vr[11] { LVCMOS33 }
+    108. temp_val_Vr[12] { LVCMOS33 }
+    109. temp_val_Vr[13] { LVCMOS33 }
+    110. temp_val_Vr[14] { LVCMOS33 }
+    111. temp_val_Vr[15] { LVCMOS33 }
+    112. temp_val_Vr[16] { LVCMOS33 }
+    113. temp_val_Vr[17] { LVCMOS33 }
+    114. temp_val_Vr[18] { LVCMOS33 }
+    115. temp_val_Vr[19] { LVCMOS33 }
+    116. temp_val_Vr[1] { LVCMOS33 }
+    117. temp_val_Vr[20] { LVCMOS33 }
+    118. temp_val_Vr[21] { LVCMOS33 }
+    119. temp_val_Vr[22] { LVCMOS33 }
+    120. temp_val_Vr[23] { LVCMOS33 }
+    121. temp_val_Vr[24] { LVCMOS33 }
+    122. temp_val_Vr[25] { LVCMOS33 }
+    123. temp_val_Vr[26] { LVCMOS33 }
+    124. temp_val_Vr[27] { LVCMOS33 }
+    125. temp_val_Vr[2] { LVCMOS33 }
+    126. temp_val_Vr[3] { LVCMOS33 }
+    127. temp_val_Vr[4] { LVCMOS33 }
+    128. temp_val_Vr[5] { LVCMOS33 }
+    129. temp_val_Vr[6] { LVCMOS33 }
+    130. temp_val_Vr[7] { LVCMOS33 }
+    131. temp_val_Vr[8] { LVCMOS33 }
+    132. temp_val_Vr[9] { LVCMOS33 }
+    133. we { LVCMOS33 }
+
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+123 out of 133 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: addr_memOut[1:0], in_val[31:0], nr_output[31:0], rst, temp_val_Vi[27:0]
+temp_val_Vr[27:0].
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP inst_datapath/mult_reg_1_reg input inst_datapath/mult_reg_1_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP inst_datapath/mult_reg_2_reg input inst_datapath/mult_reg_2_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP inst_datapath/mult_reg_1_reg multiplier stage inst_datapath/mult_reg_1_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP inst_datapath/mult_reg_2_reg multiplier stage inst_datapath/mult_reg_2_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+IOCNT-1#1 Warning
+Number of IOs  
+The design contains 123 unplaced I/O ports while the target device, xc7a35tcpg236-1, has 96 remaining available user I/O pins. This DRC assumes that all ports which do not drive MGT pins should be placed on user I/O pins. To correct this issue:
+1. Ensure you are targeting the correct device and package. Select a larger device or different package if necessary.
+2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+3. Consider design changes to reduce the number of user I/O pins needed.
+
+Related violations: <none>
+
+

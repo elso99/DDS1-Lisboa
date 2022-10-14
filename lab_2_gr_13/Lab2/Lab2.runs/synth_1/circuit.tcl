@@ -101,7 +101,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc {{C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc}}
+set_property used_in_implementation false [get_files {{C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc}}]
+
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/utils_1/imports/synth_1/circuit.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
