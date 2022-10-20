@@ -19,13 +19,13 @@ set_property CFGBVS VCCO [current_design]
 #### Assign pin and other proprieties to FPGA external signals
 
 set_property PACKAGE_PIN W5 [get_ports clk]
-set_property PACKAGE_PIN D18 [get_ports reset]
+set_property PACKAGE_PIN D18 [get_ports rst]
 
 set_property PACKAGE_PIN D17 [get_ports we]
 set_property PACKAGE_PIN E19 [get_ports done]
 
-set_property PACKAGE_PIN M1 [get_ports {addr_memOUT[1]}]
-set_property PACKAGE_PIN N2 [get_ports {addr_memOUT[0]}]
+set_property PACKAGE_PIN M1 [get_ports {addr_memOut[1]}]
+set_property PACKAGE_PIN N2 [get_ports {addr_memOut[0]}]
 
 set_property PACKAGE_PIN N1 [get_ports {sel_set[1]}]
 set_property PACKAGE_PIN N3 [get_ports {sel_set[0]}]
@@ -75,5 +75,5 @@ set_property IOSTANDARD LVCMOS33 [get_ports *]
 
 set_property DRIVE 12 [get_ports * -filter { NAME =~  "addr_memIN*" && DIRECTION == "OUT" }]
 set_property DRIVE 12 [get_ports * -filter { NAME =~  "dataOUT*" && DIRECTION == "OUT" }]
-set_property DRIVE 12 [get_ports * -filter { NAME =~  "addr_memOUT*" && DIRECTION == "OUT" }]
+set_property DRIVE 12 [get_ports * -filter { NAME =~  "addr_memOut*" && DIRECTION == "OUT" }]
 

@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.sim/sim_1/impl/timing/xsim/circuit_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemIN
+INFO: [VRFC 10-311] analyzing module MemOUT
+INFO: [VRFC 10-311] analyzing module circuit
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module glbl

@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Oct 14 14:11:48 2022
-# Process ID: 13812
+# Start of session at: Wed Oct 19 17:05:12 2022
+# Process ID: 10332
 # Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1
 # Command line: vivado.exe -log circuit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source circuit.tcl -notrace
 # Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit.vdi

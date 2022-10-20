@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Fri Oct 14 14:11:48 2022
-# Process ID: 13812
+# Start of session at: Wed Oct 19 17:05:12 2022
+# Process ID: 10332
 # Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1
 # Command line: vivado.exe -log circuit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source circuit.tcl -notrace
 # Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit.vdi
@@ -11,136 +11,33 @@
 # Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
 #-----------------------------------------------------------
 source circuit.tcl -notrace
-Command: link_design -top circuit -part xc7a35tcpg236-1
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
+Command: open_checkpoint C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1282.176 ; gain = 2.582
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1278.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1285.246 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2022.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'addr_memOUT[1]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'addr_memOUT[0]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:28]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:28]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[31]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[30]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[29]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:42]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[28]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:43]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[27]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:44]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[26]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[25]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:46]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:46]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[24]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:47]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[23]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:48]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[22]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:49]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[21]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[20]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:51]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[19]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:52]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[18]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:53]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[17]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[16]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:55]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[15]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[14]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:57]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[13]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:58]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[12]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[11]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[10]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:61]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[9]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[8]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:63]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[7]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:64]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[6]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:65]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[5]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:66]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[4]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:67]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[3]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:68]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[2]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:69]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[1]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:70]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dataOUT[0]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:71]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched '[get_ports * -filter { NAME =~  "dataOUT*" && DIRECTION == "OUT" }]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:77]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched '[get_ports * -filter { NAME =~  "addr_memOUT*" && DIRECTION == "OUT" }]'. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc:78]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.srcs/constrs_1/imports/Handed out files/Lab2_Constraints.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1278.984 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1363.852 ; gain = 8.062
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1363.852 ; gain = 8.062
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1363.852 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-7 Infos, 37 Warnings, 37 Critical Warnings and 0 Errors encountered.
-link_design completed successfully
-link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1278.984 ; gain = 0.000
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.1 (64-bit) build 3526262
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1363.852 ; gain = 92.781
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -151,54 +48,53 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1278.984 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.929 . Memory (MB): peak = 1388.844 ; gain = 24.012
 
 Starting Cache Timing Information Task
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1cf585183
+Ending Cache Timing Information Task | Checksum: f2c98bf9
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1369.254 ; gain = 90.270
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1388.844 ; gain = 0.000
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1cf585183
+Phase 1 Retarget | Checksum: f2c98bf9
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1680.383 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1cf585183
+Phase 2 Constant propagation | Checksum: f2c98bf9
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1680.383 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1ef41b1f7
+Phase 3 Sweep | Checksum: 12aa6beb4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1680.383 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 8 cells and removed 0 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1ef41b1f7
+Phase 4 BUFG optimization | Checksum: 12aa6beb4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1680.383 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1ef41b1f7
+Phase 5 Shift Register Optimization | Checksum: 12aa6beb4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1680.383 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1ef41b1f7
+Phase 6 Post Processing Netlist | Checksum: 12aa6beb4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1680.383 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -219,10 +115,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.836 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1ae7705e2
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1680.383 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1706d2138
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1684.836 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1680.383 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -238,32 +134,31 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 4
-Ending PowerOpt Patch Enables Task | Checksum: 1ae7705e2
+Ending PowerOpt Patch Enables Task | Checksum: 1706d2138
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1809.988 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 1ae7705e2
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1706d2138
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.764 . Memory (MB): peak = 1809.988 ; gain = 125.152
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.474 . Memory (MB): peak = 1803.625 ; gain = 123.242
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 1ae7705e2
+Ending Final Cleanup Task | Checksum: 1706d2138
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.625 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 1ae7705e2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1706d2138
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.625 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-29 Infos, 37 Warnings, 37 Critical Warnings and 0 Errors encountered.
+32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1809.988 ; gain = 531.004
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1803.625 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file circuit_drc_opted.rpt -pb circuit_drc_opted.pb -rpx circuit_drc_opted.rpx
 Command: report_drc -file circuit_drc_opted.rpt -pb circuit_drc_opted.pb -rpx circuit_drc_opted.rpx
@@ -291,166 +186,439 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 182fdc979
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 115c65d10
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1809.988 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.625 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 123 I/O ports
- while the target  device: 7a35t package: cpg236, contains only 96 available user I/O. The target device has 106 usable I/O pins of which 10 are already occupied by user-locked I/Os.
- To rectify this issue:
- 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
- 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
- 3. Consider design changes to reduce the number of I/Os necessary.
-ERROR: [Place 30-435] High Range (HR) banks 14, 16, 34 and 35 have insufficient capacity to support the IOSTANDARDs defined for this design.  There are 131 IO available in the High Range (HR) banks but this design has 133 IO that require placement in an High Range (HR) bank. Please review the IOSTANDARD specifications for the IO below that require placement in an High Range (HR) bank to determine if the IOSTANDARDs need to be modified or the target device needs to change to support the design's requirements:
-	1. addr_memIN[0] { LVCMOS33 }
-	2. addr_memIN[1] { LVCMOS33 }
-	3. addr_memIN[2] { LVCMOS33 }
-	4. addr_memIN[3] { LVCMOS33 }
-	5. addr_memIN[4] { LVCMOS33 }
-	6. addr_memOut[0] { LVCMOS33 }
-	7. addr_memOut[1] { LVCMOS33 }
-	8. clk { LVCMOS33 }
-	9. done { LVCMOS33 }
-	10. in_val[0] { LVCMOS33 }
-	11. in_val[10] { LVCMOS33 }
-	12. in_val[11] { LVCMOS33 }
-	13. in_val[12] { LVCMOS33 }
-	14. in_val[13] { LVCMOS33 }
-	15. in_val[14] { LVCMOS33 }
-	16. in_val[15] { LVCMOS33 }
-	17. in_val[16] { LVCMOS33 }
-	18. in_val[17] { LVCMOS33 }
-	19. in_val[18] { LVCMOS33 }
-	20. in_val[19] { LVCMOS33 }
-	21. in_val[1] { LVCMOS33 }
-	22. in_val[20] { LVCMOS33 }
-	23. in_val[21] { LVCMOS33 }
-	24. in_val[22] { LVCMOS33 }
-	25. in_val[23] { LVCMOS33 }
-	26. in_val[24] { LVCMOS33 }
-	27. in_val[25] { LVCMOS33 }
-	28. in_val[26] { LVCMOS33 }
-	29. in_val[27] { LVCMOS33 }
-	30. in_val[28] { LVCMOS33 }
-	31. in_val[29] { LVCMOS33 }
-	32. in_val[2] { LVCMOS33 }
-	33. in_val[30] { LVCMOS33 }
-	34. in_val[31] { LVCMOS33 }
-	35. in_val[3] { LVCMOS33 }
-	36. in_val[4] { LVCMOS33 }
-	37. in_val[5] { LVCMOS33 }
-	38. in_val[6] { LVCMOS33 }
-	39. in_val[7] { LVCMOS33 }
-	40. in_val[8] { LVCMOS33 }
-	41. in_val[9] { LVCMOS33 }
-	42. nr_output[0] { LVCMOS33 }
-	43. nr_output[10] { LVCMOS33 }
-	44. nr_output[11] { LVCMOS33 }
-	45. nr_output[12] { LVCMOS33 }
-	46. nr_output[13] { LVCMOS33 }
-	47. nr_output[14] { LVCMOS33 }
-	48. nr_output[15] { LVCMOS33 }
-	49. nr_output[16] { LVCMOS33 }
-	50. nr_output[17] { LVCMOS33 }
-	51. nr_output[18] { LVCMOS33 }
-	52. nr_output[19] { LVCMOS33 }
-	53. nr_output[1] { LVCMOS33 }
-	54. nr_output[20] { LVCMOS33 }
-	55. nr_output[21] { LVCMOS33 }
-	56. nr_output[22] { LVCMOS33 }
-	57. nr_output[23] { LVCMOS33 }
-	58. nr_output[24] { LVCMOS33 }
-	59. nr_output[25] { LVCMOS33 }
-	60. nr_output[26] { LVCMOS33 }
-	61. nr_output[27] { LVCMOS33 }
-	62. nr_output[28] { LVCMOS33 }
-	63. nr_output[29] { LVCMOS33 }
-	64. nr_output[2] { LVCMOS33 }
-	65. nr_output[30] { LVCMOS33 }
-	66. nr_output[31] { LVCMOS33 }
-	67. nr_output[3] { LVCMOS33 }
-	68. nr_output[4] { LVCMOS33 }
-	69. nr_output[5] { LVCMOS33 }
-	70. nr_output[6] { LVCMOS33 }
-	71. nr_output[7] { LVCMOS33 }
-	72. nr_output[8] { LVCMOS33 }
-	73. nr_output[9] { LVCMOS33 }
-	74. rst { LVCMOS33 }
-	75. sel_set[0] { LVCMOS33 }
-	76. sel_set[1] { LVCMOS33 }
-	77. temp_val_Vi[0] { LVCMOS33 }
-	78. temp_val_Vi[10] { LVCMOS33 }
-	79. temp_val_Vi[11] { LVCMOS33 }
-	80. temp_val_Vi[12] { LVCMOS33 }
-	81. temp_val_Vi[13] { LVCMOS33 }
-	82. temp_val_Vi[14] { LVCMOS33 }
-	83. temp_val_Vi[15] { LVCMOS33 }
-	84. temp_val_Vi[16] { LVCMOS33 }
-	85. temp_val_Vi[17] { LVCMOS33 }
-	86. temp_val_Vi[18] { LVCMOS33 }
-	87. temp_val_Vi[19] { LVCMOS33 }
-	88. temp_val_Vi[1] { LVCMOS33 }
-	89. temp_val_Vi[20] { LVCMOS33 }
-	90. temp_val_Vi[21] { LVCMOS33 }
-	91. temp_val_Vi[22] { LVCMOS33 }
-	92. temp_val_Vi[23] { LVCMOS33 }
-	93. temp_val_Vi[24] { LVCMOS33 }
-	94. temp_val_Vi[25] { LVCMOS33 }
-	95. temp_val_Vi[26] { LVCMOS33 }
-	96. temp_val_Vi[27] { LVCMOS33 }
-	97. temp_val_Vi[2] { LVCMOS33 }
-	98. temp_val_Vi[3] { LVCMOS33 }
-	99. temp_val_Vi[4] { LVCMOS33 }
-	100. temp_val_Vi[5] { LVCMOS33 }
-	101. temp_val_Vi[6] { LVCMOS33 }
-	102. temp_val_Vi[7] { LVCMOS33 }
-	103. temp_val_Vi[8] { LVCMOS33 }
-	104. temp_val_Vi[9] { LVCMOS33 }
-	105. temp_val_Vr[0] { LVCMOS33 }
-	106. temp_val_Vr[10] { LVCMOS33 }
-	107. temp_val_Vr[11] { LVCMOS33 }
-	108. temp_val_Vr[12] { LVCMOS33 }
-	109. temp_val_Vr[13] { LVCMOS33 }
-	110. temp_val_Vr[14] { LVCMOS33 }
-	111. temp_val_Vr[15] { LVCMOS33 }
-	112. temp_val_Vr[16] { LVCMOS33 }
-	113. temp_val_Vr[17] { LVCMOS33 }
-	114. temp_val_Vr[18] { LVCMOS33 }
-	115. temp_val_Vr[19] { LVCMOS33 }
-	116. temp_val_Vr[1] { LVCMOS33 }
-	117. temp_val_Vr[20] { LVCMOS33 }
-	118. temp_val_Vr[21] { LVCMOS33 }
-	119. temp_val_Vr[22] { LVCMOS33 }
-	120. temp_val_Vr[23] { LVCMOS33 }
-	121. temp_val_Vr[24] { LVCMOS33 }
-	122. temp_val_Vr[25] { LVCMOS33 }
-	123. temp_val_Vr[26] { LVCMOS33 }
-	124. temp_val_Vr[27] { LVCMOS33 }
-	125. temp_val_Vr[2] { LVCMOS33 }
-	126. temp_val_Vr[3] { LVCMOS33 }
-	127. temp_val_Vr[4] { LVCMOS33 }
-	128. temp_val_Vr[5] { LVCMOS33 }
-	129. temp_val_Vr[6] { LVCMOS33 }
-	130. temp_val_Vr[7] { LVCMOS33 }
-	131. temp_val_Vr[8] { LVCMOS33 }
-	132. temp_val_Vr[9] { LVCMOS33 }
-	133. we { LVCMOS33 }
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1856149c2
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 132ba49dd
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1809.988 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1856149c2
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.246 . Memory (MB): peak = 1803.625 ; gain = 0.000
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1809.988 ; gain = 0.000
-ERROR: [Place 30-99] Placer failed with error: 'Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
-Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
-Ending Placer Task | Checksum: 1856149c2
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 149d0b0a1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 1809.988 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.386 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 149d0b0a1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.388 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 149d0b0a1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.390 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 185c10b78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.480 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 19bdf918e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.540 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 19bdf918e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.541 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 51 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 25 nets or LUTs. Breaked 0 LUT, combined 25 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             25  |                    25  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             25  |                    25  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 16965c50b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 119ed12c1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 119ed12c1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b734133d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 15dcbccbf
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 116b236d4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1993a45aa
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: ba5a07c5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 16479f524
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1eaf1e7de
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1eaf1e7de
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1b0dec440
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.128 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 151da2d8c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1803.625 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 156d7f62d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1b0dec440
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.128. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1672d6f97
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1672d6f97
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1672d6f97
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1672d6f97
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1672d6f97
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1b0885a74
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Ending Placer Task | Checksum: 1458c1ce2
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.625 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-47 Infos, 37 Warnings, 37 Critical Warnings and 4 Errors encountered.
-place_design failed
-ERROR: [Common 17-69] Command failed: Placer could not place all instances
-INFO: [Common 17-206] Exiting Vivado at Fri Oct 14 14:12:14 2022...
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1803.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file circuit_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1803.625 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file circuit_utilization_placed.rpt -pb circuit_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file circuit_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1803.625 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1803.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: b9ab5adc ConstDB: 0 ShapeSum: 8be0c206 RouteDB: 0
+Post Restoration Checksum: NetGraph: 57c0b8e8 NumContArr: e50c909f Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 13ccd4987
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1803.625 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 13ccd4987
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1808.812 ; gain = 5.188
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 13ccd4987
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1808.812 ; gain = 5.188
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1ac49a4f6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1814.332 ; gain = 10.707
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.163  | TNS=0.000  | WHS=-0.177 | THS=-4.118 |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 626
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 626
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 214f0d54c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 214f0d54c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+Phase 3 Initial Routing | Checksum: 5fc4246c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.059  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: f4d720ea
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.059  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 199ba8ba5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+Phase 4 Rip-up And Reroute | Checksum: 199ba8ba5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 199ba8ba5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 199ba8ba5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+Phase 5 Delay and Skew Optimization | Checksum: 199ba8ba5
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2565c660d
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.138  | TNS=0.000  | WHS=0.116  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1e82e8049
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+Phase 6 Post Hold Fix | Checksum: 1e82e8049
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.159292 %
+  Global Horizontal Routing Utilization  = 0.190786 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1f8f6b016
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1817.730 ; gain = 14.105
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f8f6b016
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1818.371 ; gain = 14.746
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1437fd38a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1818.371 ; gain = 14.746
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.138  | TNS=0.000  | WHS=0.116  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1437fd38a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1818.371 ; gain = 14.746
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1818.371 ; gain = 14.746
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 1818.371 ; gain = 14.746
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1831.199 ; gain = 12.828
+INFO: [Common 17-1381] The checkpoint 'C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file circuit_drc_routed.rpt -pb circuit_drc_routed.pb -rpx circuit_drc_routed.rpx
+Command: report_drc -file circuit_drc_routed.rpt -pb circuit_drc_routed.pb -rpx circuit_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file circuit_methodology_drc_routed.rpt -pb circuit_methodology_drc_routed.pb -rpx circuit_methodology_drc_routed.rpx
+Command: report_methodology -file circuit_methodology_drc_routed.rpt -pb circuit_methodology_drc_routed.pb -rpx circuit_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.runs/impl_1/circuit_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file circuit_power_routed.rpt -pb circuit_power_summary_routed.pb -rpx circuit_power_routed.rpx
+Command: report_power -file circuit_power_routed.rpt -pb circuit_power_summary_routed.pb -rpx circuit_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+105 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file circuit_route_status.rpt -pb circuit_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file circuit_timing_summary_routed.rpt -pb circuit_timing_summary_routed.pb -rpx circuit_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file circuit_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file circuit_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file circuit_bus_skew_routed.rpt -pb circuit_bus_skew_routed.pb -rpx circuit_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 19 17:06:05 2022...

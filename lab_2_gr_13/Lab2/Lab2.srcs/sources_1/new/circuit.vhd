@@ -7,13 +7,10 @@ entity circuit is
         rst         : in std_logic;
         sel_set     : in std_logic_vector (1 downto 0);
         done        : out std_logic;
-        nr_output   : out std_logic_vector (31 downto 0);
+        dataOUT   : out std_logic_vector (31 downto 0);
         addr_memIN  : out std_logic_vector (4 downto 0);
         addr_memOut : out std_logic_vector (1 downto 0);
-        we          : out std_logic;
-        temp_val_Vi     : out std_logic_vector(27 downto 0);
-        temp_val_Vr     : out std_logic_vector(27 downto 0);
-        in_val          : out std_logic_vector(31 downto 0) -- The value that is outputted from memIN at every moment
+        we          : out std_logic
         );
 end circuit;
 
@@ -58,9 +55,7 @@ architecture Behavioral of circuit is
         mem_in          : in std_logic_vector (31 downto 0);
         en_reg          : in std_logic_vector (5 downto 0);
         sel_load        : in std_logic_vector (1 downto 0);
-        nr_out          : out std_logic_vector (31 downto 0);
-        temp_val_Vi    : out std_logic_vector(27 downto 0);
-        temp_val_Vr    : out std_logic_vector(27 downto 0)
+        nr_out          : out std_logic_vector (31 downto 0)
         );
     end component;
      
@@ -80,7 +75,7 @@ architecture Behavioral of circuit is
         addr_memOut     => cir_addr_memOut,
         we              => cir_we,
         dataIN          => cir_dataout,
-        dataOUT         => nr_output
+        dataOUT         => dataOUT
         );
     
     inst_MemIN  : MemIN port map(
@@ -116,13 +111,10 @@ architecture Behavioral of circuit is
         en_reg(1)       => enables(3),
         en_reg(0)       => enables(2),
         sw_out          => cir_sw,
-        nr_out          => cir_dataout,
-        temp_val_Vi     => temp_val_Vi,
-        temp_val_Vr     => temp_val_Vr
+        nr_out          => cir_dataout
         );
         
     addr_memIN <= cir_addr_memIN(4 downto 0);
     addr_memOut <= cir_addr_memOut(1 downto 0);
     we <= cir_we;
-    in_val <= cir_memin;
 end Behavioral;

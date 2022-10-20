@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1665753058">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1666195505">
+  <File Type="OPT-HWDEF" Name="circuit.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="circuit_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="circuit.dcp"/>
   <File Type="ROUTE-PWR" Name="circuit_power_routed.rpt"/>
   <File Type="PA-TCL" Name="circuit.tcl"/>
   <File Type="BITSTR-MMI" Name="circuit.mmi"/>
@@ -10,7 +13,6 @@
   <File Type="OPT-TIMING" Name="circuit_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="circuit_opt.dcp"/>
   <File Type="OPT-DRC" Name="circuit_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="circuit.hwdef"/>
   <File Type="PWROPT-DCP" Name="circuit_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="circuit_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="circuit_timing_summary_pwropted.rpt"/>
@@ -48,7 +50,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="circuit_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="circuit_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="circuit_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="circuit_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="circuit_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="circuit_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="circuit_postroute_physopt.dcp"/>

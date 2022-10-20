@@ -10,9 +10,7 @@ entity datapath is
     mem_in      : in std_logic_vector (31 downto 0); -- from memIN based on mem_in_addr in control.vhd
     en_reg      : in std_logic_vector (5 downto 0); -- AR1[5], AR2[4], MR1[3], MR2[2], YTR[1], YTI[0], register enables.
     sel_load    : in std_logic_vector (1 downto 0);
-    nr_out      : out std_logic_vector (31 downto 0);
-    temp_val_Vi    : out std_logic_vector(27 downto 0);
-    temp_val_Vr    : out std_logic_vector(27 downto 0)
+    nr_out      : out std_logic_vector (31 downto 0)
     );
 end datapath;
 
@@ -25,7 +23,7 @@ architecture behavioral of datapath is
     signal mult1_in2, mult2_in2     : signed (15 downto 0);
     signal mult_reg_1, mult_reg_2   : signed (23 downto 0); 
     signal do_mult_1, do_mult_2     : signed (23 downto 0); 
-    signal do_div_yti, do_div_ytr   : signed (31 downto 0);
+    signal do_div_yti, do_div_ytr   : signed (27 downto 0);
     signal alu_reg_1, alu_reg_2, yti, ytr, alu1_in1, alu1_in2, alu2_in1, alu2_in2, do_alu_1, do_alu_2  : signed(27 downto 0);
  -- this signal initialization is only considered for simulation
 Begin
@@ -51,11 +49,9 @@ alu2_in2    <=  resize(mult_reg_1, alu2_in2'length) when (oper="100") else
                 yti;
                 
 -- Mux for choosing who of YAr and YAi to go to memOUT.                
-nr_out      <=  std_logic_vector(do_div_ytr) when (sw_out='1') else
-                std_logic_vector(do_div_yti);
+nr_out      <=  std_logic_vector(resize(do_div_ytr, nr_out'length)) when (sw_out='1') else
+                std_logic_vector(resize(do_div_yti, nr_out'length)); 
                 
-temp_val_Vr <=  std_logic_vector(ytr);
-temp_val_Vi <=  std_logic_vector(yti);  
  --Arithemtic operations
 do_alu_1    <=  alu1_in1 - alu1_in2 when (oper="011") else
                 alu1_in1 + alu1_in2;                                
@@ -69,14 +65,14 @@ process (clk)
 begin
     if clk'event and clk='1' then
         if yti(27)='1' then
-            do_div_yti(31 downto 25) <= (others =>'1');
+            do_div_yti(27 downto 25) <= (others =>'1');
         else
-            do_div_yti(31 downto 25) <= (others =>'0');
+            do_div_yti(27 downto 25) <= (others =>'0');
         end if;
         if ytr(27)='1' then
-            do_div_ytr(31 downto 25) <= (others =>'1');
+            do_div_ytr(27 downto 25) <= (others =>'1');
         else
-            do_div_ytr(31 downto 25) <= (others =>'0');
+            do_div_ytr(27 downto 25) <= (others =>'0');
         end if;
         do_div_yti(24 downto 0) <= yti(27 downto 3);
         do_div_ytr(24 downto 0) <= ytr(27 downto 3);

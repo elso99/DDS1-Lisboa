@@ -10,15 +10,12 @@ architecture behavior of circuit_tb is
     port (
       clk         : in std_logic; -- OK
       rst         : in std_logic; -- OK
-      sel_set     : in std_logic_vector (1 downto 0); -- select signal for different sets in memIN. Not mandatory
+      sel_set     : in std_logic_vector (1 downto 0); -- select signal for different sets in memIN. mandatory
       done        : out std_logic; -- OK
-      nr_output   : out std_logic_vector (31 downto 0); -- OK
+      dataOUT   : out std_logic_vector (31 downto 0); -- OK
       addr_memIN  : out std_logic_vector (4 downto 0); -- OK
       addr_memOut : out std_logic_vector (1 downto 0); -- OK
-      we          : out std_logic; -- OK
-      temp_val_Vi    : out std_logic_vector(27 downto 0); -- Not mandatory
-      temp_val_Vr    : out std_logic_vector(27 downto 0); -- Not mandatory
-      in_val         : out std_logic_vector(31 downto 0) -- Not mandatory
+      we          : out std_logic -- OK
     );
   end component;
 
@@ -29,13 +26,10 @@ architecture behavior of circuit_tb is
   
   -- outputs
   signal done        : std_logic;
-  signal nr_output   : std_logic_vector (31 downto 0);
+  signal dataOUT   : std_logic_vector (31 downto 0);
   signal addr_memIN  : std_logic_vector (4 downto 0);
   signal addr_memOut : std_logic_vector (1 downto 0);
   signal we          : std_logic;
-  signal temp_val_Vi    : std_logic_vector(27 downto 0);
-  signal temp_val_Vr    : std_logic_vector(27 downto 0);
-  signal in_val          : std_logic_vector(31 downto 0);
   
   -- Clock period definitions
 constant clk_period : time := 10 ns;
@@ -49,13 +43,10 @@ begin
     rst         => rst,
     sel_set     => sel_set,
     done        => done,
-    nr_output   => nr_output,
+    dataOUT   => dataOUT,
     addr_memIN  => addr_memIN,
     addr_memOut => addr_memOut,
-    we          => we,
-    temp_val_Vi => temp_val_Vi,
-    temp_val_Vr => temp_val_Vr,
-    in_val      => in_val
+    we          => we
     );
 
   -- Clock definition
