@@ -17,7 +17,9 @@
   <File Type="BITSTR-NKY" Name="circuit.nky"/>
   <File Type="BITSTR-BMM" Name="circuit_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="circuit.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="circuit.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="circuit.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
@@ -26,8 +28,11 @@
   <File Type="PLACE-IO" Name="circuit_io_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="circuit_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="circuit_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="circuit_routed.rqs"/>
   <File Type="PLACE-CTRL" Name="circuit_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="circuit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-DRC" Name="circuit_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="circuit_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="circuit_power_routed.rpx"/>
@@ -48,8 +53,6 @@
   <File Type="PHYSOPT-DCP" Name="circuit_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="circuit_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="circuit_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="circuit_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="circuit_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="circuit.pdi"/>
@@ -58,10 +61,7 @@
   <File Type="RNPI_FILE" Name="circuit.rnpi"/>
   <File Type="NPI_FILE" Name="circuit.npi"/>
   <File Type="RBD_FILE" Name="circuit.rbd"/>
-  <File Type="ROUTE-RQS" Name="circuit_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="circuit_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/control.vhd">

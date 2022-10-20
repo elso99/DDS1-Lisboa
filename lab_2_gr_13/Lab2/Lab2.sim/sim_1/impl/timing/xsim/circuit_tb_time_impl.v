@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-// Date        : Thu Oct 20 13:12:02 2022
+// Date        : Thu Oct 20 18:10:16 2022
 // Host        : DESKTOP-SAB7C30 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.sim/sim_1/impl/timing/xsim/circuit_tb_time_impl.v

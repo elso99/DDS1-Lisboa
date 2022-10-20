@@ -2,13 +2,16 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Oct 20 13:04:08 2022
-# Process ID: 14704
+# Start of session at: Thu Oct 20 18:09:38 2022
+# Process ID: 10484
 # Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17668 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_2_gr_13\Lab2\Lab2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3060 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_2_gr_13\Lab2\Lab2.xpr
 # Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/vivado.log
 # Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2\vivado.jou
 # Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.xpr
+launch_simulation -mode post-implementation -type timing
+source circuit_tb.tcl
+archive_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2.xpr.zip -temp_dir C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/.Xil/Vivado-10484-DESKTOP-SAB7C30 -force -exclude_run_results
