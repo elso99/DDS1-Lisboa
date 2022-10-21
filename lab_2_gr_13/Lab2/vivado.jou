@@ -15,3 +15,4 @@ open_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/Lab2.xpr
 launch_simulation -mode post-implementation -type timing
 source circuit_tb.tcl
 archive_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2.xpr.zip -temp_dir C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_2_gr_13/Lab2/.Xil/Vivado-10484-DESKTOP-SAB7C30 -force -exclude_run_results
+close_sim
