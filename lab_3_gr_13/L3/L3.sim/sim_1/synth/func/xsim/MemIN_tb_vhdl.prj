@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"MemIN_tb_func_synth.vhd" \
+"../../../../../L3.srcs/sim_1/new/MemIN_tb.vhd" \
+
+# Do not sort compile order
+nosort

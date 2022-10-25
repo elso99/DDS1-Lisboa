@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.sim/sim_1/synth/func/xsim/MemIN_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unimacro_BRAM_TDP_MACRO'
+INFO: [VRFC 10-3107] analyzing entity 'MemIN'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/MemIN_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MemIN_tb'

@@ -7,6 +7,12 @@ end circuit;
 
 architecture Behavioral of circuit is
 
+    component datapath
+        port(
+
+        );
+    end component;
+
 begin
 
 

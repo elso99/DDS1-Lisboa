@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Oct 24 17:09:41 2022
+# Process ID: 12584
+# Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22256 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_3_gr_13\L3\L3.xpr
+# Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/vivado.log
+# Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3\vivado.jou
+# Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/linecalc.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/linecalc_tb.vhd w ]
+add_files -fileset sim_1 C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/linecalc_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+import_files -norecurse C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/Handed_out_files/mem1.vhd
+update_compile_order -fileset sources_1
