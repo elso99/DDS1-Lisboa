@@ -11,7 +11,8 @@ entity datapath is
         en_reg : in std_logic_vector(1 downto 0);
         do_a : in std_logic_vector(31 downto 0);
         do_b : in std_logic_vector(31 downto 0);
-        fit_err : out std_logic_vector(31 downto 0)
+        fit_err : out std_logic_vector(31 downto 0);
+        k   : out std_logic_vector(7 downto 0)
     );
 end datapath;
 
@@ -23,12 +24,17 @@ architecture Behavioral of datapath is
         rst                        : in std_logic;
         en_reg                     : in std_logic;
         m, b, x, y                 : in std_logic_vector (15 downto 0);
-        fit_err                    : out std_logic_vector (31 downto 0)
+        abs_reg                    : out signed (31 downto 0)
         );
     end component;
 
-        signal m1, m2, m3, m4, m5, m6, m7, m8, b1, b2, b3, b4, b5, b6, b7, b8, x, y : std_logic_vector (15 downto 0);
+        signal m1, m2, m3, m4, m5, m6, m7, m8, b1, b2, b3, b4, b5, b6, b7, b8, x1, y1, x2, y2 : std_logic_vector (15 downto 0);
         signal fit_err1, fit_err2, fit_err3, fit_err4, fit_err5, fit_err6, fit_err7, fit_err8, semi1, semi2, semi3, semi4, final1, final2 : std_logic_vector (31 downto 0);
+        signal out11, out12, out21, out22, out31, out32, out41, out42, out51, out52, out61, out62, out71, out72, out81, out82 : signed (31 downto 0);
+        signal line1, line2, line3, line4, line5, line6, line7, line8 : signed (31 downto 0);
+        signal line1_reg, line2_reg, line3_reg, line4_reg, line5_reg, line6_reg, line7_reg, line8_reg : signed (31 downto 0);
+        signal do_out1, do_out2, do_out3, do_out4, do_out5, do_out6, do_out7, do_out8 : signed (31 downto 0);
+        signal do_out1_reg, do_out2_reg, do_out3_reg, do_out4_reg, do_out5_reg, do_out6_reg, do_out7_reg, do_out8_reg : signed(31 downto 0);
 begin
     
     inst_linecalc1 : linecalc port map(
@@ -37,9 +43,20 @@ begin
         en_reg      => en_reg(0),
         m           => m1,
         b           => b1,
-        fit_err     => fit_err1,
-        x           => x,
-        y           => y
+        abs_reg     => out11,
+        x           => x1,
+        y           => y1
+        );
+    
+    inst_linecalc1_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m1,
+        b           => b1,
+        abs_reg     => out12,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc2 : linecalc port map(
@@ -48,9 +65,20 @@ begin
         en_reg      => en_reg(0),
         m           => m2,
         b           => b2,
-        fit_err     => fit_err2,
-        x           => x,
-        y           => y
+        abs_reg     => out21,
+        x           => x1,
+        y           => y1
+        );
+
+    inst_linecalc2_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m2,
+        b           => b2,
+        abs_reg     => out22,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc3 : linecalc port map(
@@ -59,9 +87,20 @@ begin
         en_reg      => en_reg(0),
         m           => m3,
         b           => b3,
-        fit_err     => fit_err3,
-        x           => x,
-        y           => y
+        abs_reg     => out31,
+        x           => x1,
+        y           => y1
+        );
+
+    inst_linecalc3_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m3,
+        b           => b3,
+        abs_reg     => out32,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc4 : linecalc port map(
@@ -70,9 +109,20 @@ begin
         en_reg      => en_reg(0),
         m           => m4,
         b           => b4,
-        fit_err     => fit_err4,
-        x           => x,
-        y           => y
+        abs_reg     => out41,
+        x           => x1,
+        y           => y1
+        );
+
+    inst_linecalc4_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m4,
+        b           => b4,
+        abs_reg     => out42,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc5 : linecalc port map(
@@ -81,9 +131,20 @@ begin
         en_reg      => en_reg(0),
         m           => m5,
         b           => b5,
-        fit_err     => fit_err5,
-        x           => x,
-        y           => y
+        abs_reg     => out51,
+        x           => x1,
+        y           => y1
+        );
+
+    inst_linecalc5_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m5,
+        b           => b5,
+        abs_reg     => out52,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc6 : linecalc port map(
@@ -92,9 +153,20 @@ begin
         en_reg      => en_reg(0),
         m           => m6,
         b           => b6,
-        fit_err     => fit_err6,
-        x           => x,
-        y           => y
+        abs_reg     => out61,
+        x           => x1,
+        y           => y1
+        );
+
+    inst_linecalc6_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m6,
+        b           => b6,
+        abs_reg     => out62,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc7 : linecalc port map(
@@ -103,9 +175,20 @@ begin
         en_reg      => en_reg(0),
         m           => m7,
         b           => b7,
-        fit_err     => fit_err7,
-        x           => x,
-        y           => y
+        abs_reg     => out71,
+        x           => x1,
+        y           => y1
+        );
+
+    inst_linecalc7_2 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m7,
+        b           => b7,
+        abs_reg     => out72,
+        x           => x2,
+        y           => y2
         );
 
     inst_linecalc8 : linecalc port map(
@@ -114,15 +197,52 @@ begin
         en_reg      => en_reg(0),
         m           => m8,
         b           => b8,
-        fit_err     => fit_err8,
-        x           => x,
-        y           => y
-        );    
+        abs_reg     => out81,
+        x           => x1,
+        y           => y1
+        );   
+        
+    inst_linecalc8 : linecalc port map(
+        clk         => clk,
+        rst         => rst,
+        en_reg      => en_reg(0),
+        m           => m8,
+        b           => b8,
+        abs_reg     => out82,
+        x           => x2,
+        y           => y2
+        ); 
         --inst_linecalc : linecalc2 port map(
     --    
     --);
     --semi1 <= std_logic_vector(minimum(to_integer(unsigned(fit_err1)), to_integer(unsigned(fit_err2))));
-     
+    line1 <= ("0000" & out11(31 downto 4)) + ("0000" & out12(31 downto 4));
+    line2 <= ("0000" & out21(31 downto 4)) + ("0000" & out22(31 downto 4));
+    line3 <= ("0000" & out31(31 downto 4)) + ("0000" & out32(31 downto 4));
+    line4 <= ("0000" & out41(31 downto 4)) + ("0000" & out42(31 downto 4));
+    line5 <= ("0000" & out51(31 downto 4)) + ("0000" & out52(31 downto 4));
+    line6 <= ("0000" & out61(31 downto 4)) + ("0000" & out62(31 downto 4));
+    line7 <= ("0000" & out71(31 downto 4)) + ("0000" & out72(31 downto 4));
+    line8 <= ("0000" & out81(31 downto 4)) + ("0000" & out82(31 downto 4));
+    
+    do_out1  <=  do_out1_reg + line1_reg;
+    do_out2  <=  do_out2_reg + line2_reg;
+    do_out3  <=  do_out3_reg + line3_reg;
+    do_out4  <=  do_out4_reg + line4_reg;
+    do_out5  <=  do_out5_reg + line5_reg;
+    do_out6  <=  do_out6_reg + line6_reg;
+    do_out7  <=  do_out7_reg + line7_reg;
+    do_out8  <=  do_out8_reg + line8_reg;
+
+    fit_err1 <= std_logic_vector(do_out1_reg);
+    fit_err2 <= std_logic_vector(do_out2_reg);
+    fit_err3 <= std_logic_vector(do_out3_reg);
+    fit_err4 <= std_logic_vector(do_out4_reg);
+    fit_err5 <= std_logic_vector(do_out5_reg);
+    fit_err6 <= std_logic_vector(do_out6_reg);
+    fit_err7 <= std_logic_vector(do_out7_reg);
+    fit_err8 <= std_logic_vector(do_out8_reg);
+
     semi1 <= fit_err1 when (to_integer(unsigned(fit_err1)) < to_integer(unsigned(fit_err2))) else
             fit_err2;
     semi2 <= fit_err3 when (to_integer(unsigned(fit_err3)) < to_integer(unsigned(fit_err4))) else
@@ -141,40 +261,52 @@ begin
     begin
         if clk'event and clk='1' then
             if en_reg(1)='1' then
-                x <= do_b(31 downto 16);
-                y <= do_b(15 downto 0);
+                x1 <= do_a(31 downto 16);
+                y1 <= do_a(15 downto 0);
+                x2 <= do_b(31 downto 16);
+                y2 <= do_b(15 downto 0);
+            end if;
+            if en_reg(0)='1' then
+                line1_reg <= line1;
+                line2_reg <= line2;
+                line3_reg <= line3;
+                line4_reg <= line4;
+                line5_reg <= line5;
+                line6_reg <= line6;
+                line7_reg <= line7;
+                line8_reg <= line8;
+                do_out1_reg <= do_out1;
+                do_out2_reg <= do_out2;
+                do_out3_reg <= do_out3;
+                do_out4_reg <= do_out4;
+                do_out5_reg <= do_out5;
+                do_out6_reg <= do_out6;
+                do_out7_reg <= do_out7;
+                do_out8_reg <= do_out8;
             end if;
             if oper="0001" then
                 m1 <= do_a(31 downto 16);
                 b1 <= do_a(15 downto 0);
+                m2 <= do_b(31 downto 16);
+                b2 <= do_b(15 downto 0);
             end if;
             if oper="0010" then
-                m2 <= do_a(31 downto 16);
-                b2 <= do_a(15 downto 0);
-            end if;
-            if oper="0011" then
                 m3 <= do_a(31 downto 16);
                 b3 <= do_a(15 downto 0);
+                m4 <= do_b(31 downto 16);
+                b4 <= do_b(15 downto 0);
             end if;
-            if oper="0100" then
-                m4 <= do_a(31 downto 16);
-                b4 <= do_a(15 downto 0);
-            end if;
-            if oper="0101" then
+            if oper="0011" then
                 m5 <= do_a(31 downto 16);
                 b5 <= do_a(15 downto 0);
+                m6 <= do_b(31 downto 16);
+                b6 <= do_b(15 downto 0);
             end if;
-            if oper="0110" then
-                m6 <= do_a(31 downto 16);
-                b6 <= do_a(15 downto 0);
-            end if;
-            if oper="0111" then
+            if oper="0100" then
                 m7 <= do_a(31 downto 16);
                 b7 <= do_a(15 downto 0);
-            end if;
-            if oper="1000" then
-                m8 <= do_a(31 downto 16);
-                b8 <= do_a(15 downto 0);
+                m8 <= do_b(31 downto 16);
+                b8 <= do_b(15 downto 0);
             end if;
         end if;
     end process;
