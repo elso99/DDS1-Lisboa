@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1666713337" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/linecalc.dcp">
-  <File Type="PA-TCL" Name="datapath.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="datapath_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="datapath_reports.tcl"/>
-  <File Type="RDS-RDS" Name="datapath.vds"/>
-  <File Type="RDS-UTIL" Name="datapath_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="datapath_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="datapath.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="datapath_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="datapath_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1667237850" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/linecalc.dcp">
+  <File Type="PA-TCL" Name="circuit.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="circuit_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="circuit_reports.tcl"/>
+  <File Type="RDS-RDS" Name="circuit.vds"/>
+  <File Type="RDS-UTIL" Name="circuit_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="circuit_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="circuit.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="circuit_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="circuit_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/linecalc.vhd">
+    <File Path="$PSRCDIR/sources_1/new/control.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -23,32 +23,65 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/Handed_out_files/mem1.vhd">
+    <File Path="$PSRCDIR/sources_1/new/linecalc.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/Handed_out_files/mem1.vhd"/>
-        <Attr Name="ImportTime" Val="1666617049"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/control.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/mems_V2/mem1.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Handed_out_files/mems_V2/mem1.vhd"/>
+        <Attr Name="ImportTime" Val="1666974598"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/circuit.vhd">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Handed_out_files/hex2disp.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Handed_out_files/hex2disp.vhd"/>
+        <Attr Name="ImportTime" Val="1667226849"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Handed_out_files/disp7.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Handed_out_files/disp7.vhd"/>
+        <Attr Name="ImportTime" Val="1667226849"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Handed_out_files/fpga_basicIO.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Handed_out_files/fpga_basicIO.vhd"/>
+        <Attr Name="ImportTime" Val="1667226865"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Handed_out_files/clkdiv.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Handed_out_files/clkdiv.vhd"/>
+        <Attr Name="ImportTime" Val="1667226848"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="datapath"/>
+      <Option Name="TopModule" Val="circuit"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

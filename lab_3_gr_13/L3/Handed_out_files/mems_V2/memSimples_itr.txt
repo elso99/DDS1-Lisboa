@@ -1,0 +1,188 @@
+Digital System Design (2022/23, 1o Sem. P1) - Prof. Paulo Flores
+bestapprox - best line approximation to a set of points (Ver. 2.0)[1]
+bestapprox 13 memSimples
+
+  Parameters:     Integer            Hexdecimal           Fix Point 8.8
+
+   Mem. Address: 0x000
+  L.k=0  (m,b)= (     0,    256)->(0x0000, 0x0100)->(           0,            1)
+  L.k=1  (m,b)= (   256,      0)->(0x0100, 0x0000)->(           1,            0)
+  L.k=2  (m,b)= (   256,    256)->(0x0100, 0x0100)->(           1,            1)
+  L.k=3  (m,b)= (     0,    512)->(0x0000, 0x0200)->(           0,            2)
+  L.k=4  (m,b)= (   512,      0)->(0x0200, 0x0000)->(           2,            0)
+  L.k=5  (m,b)= (   512,    512)->(0x0200, 0x0200)->(           2,            2)
+  L.k=6  (m,b)= (   768,    768)->(0x0300, 0x0300)->(           3,            3)
+  L.k=7  (m,b)= (   255,    255)->(0x00FF, 0x00FF)->(  0.99609375,   0.99609375)
+
+   Mem. Address: 0x010
+  P.i=0  (x,y)= ( 13557,   8704)  (0x34F5, 0x2200)  ( 52.95703125,           34)
+  P.i=1  (x,y)= ( 20400,  18226)  (0x4FB0, 0x4732)  (     79.6875,   71.1953125)
+  P.i=2  (x,y)= (  9453, -25015)  (0x24ED, 0x9E49)  ( 36.92578125, -97.71484375)
+  P.i=3  (x,y)= (-32768,  32767)  (0x8000, 0x7FFF)  (        -128, 127.99609375)
+  P.i=4  (x,y)= ( 17633,  -5416)  (0x44E1, 0xEAD8)  ( 68.87890625,    -21.15625)
+  P.i=5  (x,y)= (    -1,      1)  (0xFFFF, 0x0001)  ( -0.00390625,   0.00390625)
+  P.i=6  (x,y)= ( -1173, -20159)  (0xFB6B, 0xB141)  ( -4.58203125, -78.74609375)
+  P.i=7  (x,y)= ( 29699,  28437)  (0x7403, 0x6F15)  (116.01171875, 111.08203125)
+  P.i=8  (x,y)= ( 12990,  21443)  (0x32BE, 0x53C3)  (  50.7421875,  83.76171875)
+  P.i=9  (x,y)= ( 26533,   1595)  (0x67A5, 0x063B)  (103.64453125,   6.23046875)
+  P.i=10 (x,y)= ( 29371, -25387)  (0x72BB, 0x9CD5)  (114.73046875, -99.16796875)
+  P.i=11 (x,y)= ( -5050, -17276)  (0xEC46, 0xBC84)  ( -19.7265625,   -67.484375)
+  P.i=12 (x,y)= (-16792,  24733)  (0xBE68, 0x609D)  (   -65.59375,  96.61328125)
+  P.i=13 (x,y)= ( -6608,   5630)  (0xE630, 0x15FE)  (    -25.8125,   21.9921875)
+  P.i=14 (x,y)= ( 16643, -32637)  (0x4103, 0x8083)  ( 65.01171875, -127.48828125)
+  P.i=15 (x,y)= (-32167,  30200)  (0x8259, 0x75F8)  (-125.65234375,    117.96875)
+
+Computed values:
+k=0 i= 0: error         33 = abs(       1 -       34)	 fitError =         33
+k=0 i= 1: error    70.1953 = abs(       1 -  71.1953)	 fitError =    103.195
+k=0 i= 2: error    98.7148 = abs(       1 - -97.7148)	 fitError =     201.91
+k=0 i= 3: error    126.996 = abs(       1 -  127.996)	 fitError =    328.906
+k=0 i= 4: error    22.1562 = abs(       1 - -21.1562)	 fitError =    351.062
+k=0 i= 5: error   0.996094 = abs(       1 - 0.00390625)	 fitError =    352.059
+k=0 i= 6: error    79.7461 = abs(       1 - -78.7461)	 fitError =    431.805
+k=0 i= 7: error    110.082 = abs(       1 -  111.082)	 fitError =    541.887
+k=0 i= 8: error    82.7617 = abs(       1 -  83.7617)	 fitError =    624.648
+k=0 i= 9: error    5.23047 = abs(       1 -  6.23047)	 fitError =    629.879
+k=0 i=10: error    100.168 = abs(       1 -  -99.168)	 fitError =    730.047
+k=0 i=11: error    68.4844 = abs(       1 - -67.4844)	 fitError =    798.531
+k=0 i=12: error    95.6133 = abs(       1 -  96.6133)	 fitError =    894.145
+k=0 i=13: error    20.9922 = abs(       1 -  21.9922)	 fitError =    915.137
+k=0 i=14: error    128.488 = abs(       1 - -127.488)	 fitError =    1043.62
+k=0 i=15: error    116.969 = abs(       1 -  117.969)	 fitError =    1160.59
+
+k=1 i= 0: error     18.957 = abs(  52.957 -       34)	 fitError =     18.957
+k=1 i= 1: error    8.49219 = abs( 79.6875 -  71.1953)	 fitError =    27.4492
+k=1 i= 2: error    134.641 = abs( 36.9258 - -97.7148)	 fitError =     162.09
+k=1 i= 3: error    255.996 = abs(    -128 -  127.996)	 fitError =    418.086
+k=1 i= 4: error    90.0352 = abs( 68.8789 - -21.1562)	 fitError =    508.121
+k=1 i= 5: error  0.0078125 = abs(-0.00390625 - 0.00390625)	 fitError =    508.129
+k=1 i= 6: error    74.1641 = abs(-4.58203 - -78.7461)	 fitError =    582.293
+k=1 i= 7: error    4.92969 = abs( 116.012 -  111.082)	 fitError =    587.223
+k=1 i= 8: error    33.0195 = abs( 50.7422 -  83.7617)	 fitError =    620.242
+k=1 i= 9: error    97.4141 = abs( 103.645 -  6.23047)	 fitError =    717.656
+k=1 i=10: error    213.898 = abs(  114.73 -  -99.168)	 fitError =    931.555
+k=1 i=11: error    47.7578 = abs(-19.7266 - -67.4844)	 fitError =    979.312
+k=1 i=12: error    162.207 = abs(-65.5938 -  96.6133)	 fitError =    1141.52
+k=1 i=13: error    47.8047 = abs(-25.8125 -  21.9922)	 fitError =    1189.32
+k=1 i=14: error      192.5 = abs( 65.0117 - -127.488)	 fitError =    1381.82
+k=1 i=15: error    243.621 = abs(-125.652 -  117.969)	 fitError =    1625.45
+
+k=2 i= 0: error     19.957 = abs(  53.957 -       34)	 fitError =     19.957
+k=2 i= 1: error    9.49219 = abs( 80.6875 -  71.1953)	 fitError =    29.4492
+k=2 i= 2: error    135.641 = abs( 37.9258 - -97.7148)	 fitError =     165.09
+k=2 i= 3: error    254.996 = abs(    -127 -  127.996)	 fitError =    420.086
+k=2 i= 4: error    91.0352 = abs( 69.8789 - -21.1562)	 fitError =    511.121
+k=2 i= 5: error   0.992188 = abs(0.996094 - 0.00390625)	 fitError =    512.113
+k=2 i= 6: error    75.1641 = abs(-3.58203 - -78.7461)	 fitError =    587.277
+k=2 i= 7: error    5.92969 = abs( 117.012 -  111.082)	 fitError =    593.207
+k=2 i= 8: error    32.0195 = abs( 51.7422 -  83.7617)	 fitError =    625.227
+k=2 i= 9: error    98.4141 = abs( 104.645 -  6.23047)	 fitError =    723.641
+k=2 i=10: error    214.898 = abs(  115.73 -  -99.168)	 fitError =    938.539
+k=2 i=11: error    48.7578 = abs(-18.7266 - -67.4844)	 fitError =    987.297
+k=2 i=12: error    161.207 = abs(-64.5938 -  96.6133)	 fitError =     1148.5
+k=2 i=13: error    46.8047 = abs(-24.8125 -  21.9922)	 fitError =    1195.31
+k=2 i=14: error      193.5 = abs( 66.0117 - -127.488)	 fitError =    1388.81
+k=2 i=15: error    242.621 = abs(-124.652 -  117.969)	 fitError =    1631.43
+
+k=3 i= 0: error         32 = abs(       2 -       34)	 fitError =         32
+k=3 i= 1: error    69.1953 = abs(       2 -  71.1953)	 fitError =    101.195
+k=3 i= 2: error    99.7148 = abs(       2 - -97.7148)	 fitError =     200.91
+k=3 i= 3: error    125.996 = abs(       2 -  127.996)	 fitError =    326.906
+k=3 i= 4: error    23.1562 = abs(       2 - -21.1562)	 fitError =    350.062
+k=3 i= 5: error    1.99609 = abs(       2 - 0.00390625)	 fitError =    352.059
+k=3 i= 6: error    80.7461 = abs(       2 - -78.7461)	 fitError =    432.805
+k=3 i= 7: error    109.082 = abs(       2 -  111.082)	 fitError =    541.887
+k=3 i= 8: error    81.7617 = abs(       2 -  83.7617)	 fitError =    623.648
+k=3 i= 9: error    4.23047 = abs(       2 -  6.23047)	 fitError =    627.879
+k=3 i=10: error    101.168 = abs(       2 -  -99.168)	 fitError =    729.047
+k=3 i=11: error    69.4844 = abs(       2 - -67.4844)	 fitError =    798.531
+k=3 i=12: error    94.6133 = abs(       2 -  96.6133)	 fitError =    893.145
+k=3 i=13: error    19.9922 = abs(       2 -  21.9922)	 fitError =    913.137
+k=3 i=14: error    129.488 = abs(       2 - -127.488)	 fitError =    1042.62
+k=3 i=15: error    115.969 = abs(       2 -  117.969)	 fitError =    1158.59
+
+k=4 i= 0: error    71.9141 = abs( 105.914 -       34)	 fitError =    71.9141
+k=4 i= 1: error    88.1797 = abs( 159.375 -  71.1953)	 fitError =    160.094
+k=4 i= 2: error    171.566 = abs( 73.8516 - -97.7148)	 fitError =     331.66
+k=4 i= 3: error    383.996 = abs(    -256 -  127.996)	 fitError =    715.656
+k=4 i= 4: error    158.914 = abs( 137.758 - -21.1562)	 fitError =     874.57
+k=4 i= 5: error  0.0117188 = abs(-0.0078125 - 0.00390625)	 fitError =    874.582
+k=4 i= 6: error     69.582 = abs(-9.16406 - -78.7461)	 fitError =    944.164
+k=4 i= 7: error    120.941 = abs( 232.023 -  111.082)	 fitError =    1065.11
+k=4 i= 8: error    17.7227 = abs( 101.484 -  83.7617)	 fitError =    1082.83
+k=4 i= 9: error    201.059 = abs( 207.289 -  6.23047)	 fitError =    1283.89
+k=4 i=10: error    328.629 = abs( 229.461 -  -99.168)	 fitError =    1612.52
+k=4 i=11: error    28.0312 = abs(-39.4531 - -67.4844)	 fitError =    1640.55
+k=4 i=12: error    227.801 = abs(-131.188 -  96.6133)	 fitError =    1868.35
+k=4 i=13: error    73.6172 = abs( -51.625 -  21.9922)	 fitError =    1941.96
+k=4 i=14: error    257.512 = abs( 130.023 - -127.488)	 fitError =    2199.48
+k=4 i=15: error    369.273 = abs(-251.305 -  117.969)	 fitError =    2568.75
+
+k=5 i= 0: error    73.9141 = abs( 107.914 -       34)	 fitError =    73.9141
+k=5 i= 1: error    90.1797 = abs( 161.375 -  71.1953)	 fitError =    164.094
+k=5 i= 2: error    173.566 = abs( 75.8516 - -97.7148)	 fitError =     337.66
+k=5 i= 3: error    381.996 = abs(    -254 -  127.996)	 fitError =    719.656
+k=5 i= 4: error    160.914 = abs( 139.758 - -21.1562)	 fitError =     880.57
+k=5 i= 5: error    1.98828 = abs( 1.99219 - 0.00390625)	 fitError =    882.559
+k=5 i= 6: error     71.582 = abs(-7.16406 - -78.7461)	 fitError =    954.141
+k=5 i= 7: error    122.941 = abs( 234.023 -  111.082)	 fitError =    1077.08
+k=5 i= 8: error    19.7227 = abs( 103.484 -  83.7617)	 fitError =     1096.8
+k=5 i= 9: error    203.059 = abs( 209.289 -  6.23047)	 fitError =    1299.86
+k=5 i=10: error    330.629 = abs( 231.461 -  -99.168)	 fitError =    1630.49
+k=5 i=11: error    30.0312 = abs(-37.4531 - -67.4844)	 fitError =    1660.52
+k=5 i=12: error    225.801 = abs(-129.188 -  96.6133)	 fitError =    1886.32
+k=5 i=13: error    71.6172 = abs( -49.625 -  21.9922)	 fitError =    1957.94
+k=5 i=14: error    259.512 = abs( 132.023 - -127.488)	 fitError =    2217.45
+k=5 i=15: error    367.273 = abs(-249.305 -  117.969)	 fitError =    2584.73
+
+k=6 i= 0: error    127.871 = abs( 161.871 -       34)	 fitError =    127.871
+k=6 i= 1: error    170.867 = abs( 242.062 -  71.1953)	 fitError =    298.738
+k=6 i= 2: error    211.492 = abs( 113.777 - -97.7148)	 fitError =     510.23
+k=6 i= 3: error    508.996 = abs(    -381 -  127.996)	 fitError =    1019.23
+k=6 i= 4: error    230.793 = abs( 209.637 - -21.1562)	 fitError =    1250.02
+k=6 i= 5: error    2.98438 = abs( 2.98828 - 0.00390625)	 fitError =       1253
+k=6 i= 6: error         68 = abs(-10.7461 - -78.7461)	 fitError =       1321
+k=6 i= 7: error    239.953 = abs( 351.035 -  111.082)	 fitError =    1560.96
+k=6 i= 8: error    71.4648 = abs( 155.227 -  83.7617)	 fitError =    1632.42
+k=6 i= 9: error    307.703 = abs( 313.934 -  6.23047)	 fitError =    1940.12
+k=6 i=10: error    446.359 = abs( 347.191 -  -99.168)	 fitError =    2386.48
+k=6 i=11: error    11.3047 = abs(-56.1797 - -67.4844)	 fitError =    2397.79
+k=6 i=12: error    290.395 = abs(-193.781 -  96.6133)	 fitError =    2688.18
+k=6 i=13: error    96.4297 = abs(-74.4375 -  21.9922)	 fitError =    2784.61
+k=6 i=14: error    325.523 = abs( 198.035 - -127.488)	 fitError =    3110.14
+k=6 i=15: error    491.926 = abs(-373.957 -  117.969)	 fitError =    3602.06
+
+k=7 i= 0: error    19.7462 = abs( 53.7462 -       34)	 fitError =    19.7461
+k=7 i= 1: error      9.177 = abs( 80.3723 -  71.1953)	 fitError =    28.9229
+k=7 i= 2: error    135.492 = abs( 37.7776 - -97.7148)	 fitError =    164.415
+k=7 i= 3: error      254.5 = abs(-126.504 -  127.996)	 fitError =    418.915
+k=7 i= 4: error    90.7622 = abs( 69.6059 - -21.1562)	 fitError =    509.677
+k=7 i= 5: error   0.988281 = abs(0.992188 - 0.00390625)	 fitError =    510.665
+k=7 i= 6: error     75.178 = abs(-3.56805 - -78.7461)	 fitError =    585.843
+k=7 i= 7: error     5.4726 = abs( 116.555 -  111.082)	 fitError =    591.315
+k=7 i= 8: error    32.2216 = abs( 51.5401 -  83.7617)	 fitError =    623.536
+k=7 i= 9: error    98.0053 = abs( 104.236 -  6.23047)	 fitError =    721.541
+k=7 i=10: error    214.446 = abs( 115.278 -  -99.168)	 fitError =    935.987
+k=7 i=11: error     48.831 = abs(-18.6534 - -67.4844)	 fitError =    984.818
+k=7 i=12: error    160.955 = abs(-64.3414 -  96.6133)	 fitError =    1145.77
+k=7 i=13: error    46.7078 = abs(-24.7156 -  21.9922)	 fitError =    1192.48
+k=7 i=14: error    193.242 = abs( 65.7538 - -127.488)	 fitError =    1385.72
+k=7 i=15: error    242.134 = abs(-124.165 -  117.969)	 fitError =    1627.86
+
+  Line Results:        Integer  Hexdecimal   Fix Point
+    0: fitError =      2376896  (002444C0)   1160.59375      
+       Display solution Q24.8  _(00048898)_  1160.59375      
+    1: fitError =      3328912  (0032CB90)   1625.4453125    
+       Display solution Q24.8  _(00065972)_  1625.4453125    
+    2: fitError =      3341168  (0032FB70)   1631.4296875    
+       Display solution Q24.8  _(00065F6E)_  1631.4296875    
+  * 3: fitError =      2372800  (002434C0)   1158.59375      
+  *    Display solution Q24.8  _(00048698)_  1158.59375      
+    4: fitError =      5260800  (00504600)   2568.75         
+       Display solution Q24.8  _(000A08C0)_  2568.75         
+    5: fitError =      5293520  (0050C5D0)   2584.7265625    
+       Display solution Q24.8  _(000A18BA)_  2584.7265625    
+    6: fitError =      7377024  (00709080)   3602.0625       
+       Display solution Q24.8  _(000E1210)_  3602.0625       
+    7: fitError =      3333848  (0032DED8)   1627.85546875   
+       Display solution Q24.8  _(00065BDB)_  1627.85546875   

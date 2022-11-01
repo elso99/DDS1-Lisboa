@@ -1,6 +1,5 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all;
 use IEEE.NUMERIC_STD.all;
 
 entity datapath is
@@ -8,7 +7,8 @@ entity datapath is
         clk : in std_logic;
         rst : in std_logic;
         oper : in std_logic_vector(3 downto 0);
-        en_reg : in std_logic_vector(1 downto 0);
+        reg_counter : in std_logic_vector(3 downto 0);
+        --en_reg : in std_logic_vector(1 downto 0);
         do_a : in std_logic_vector(31 downto 0);
         do_b : in std_logic_vector(31 downto 0);
         fit_err : out std_logic_vector(31 downto 0);
@@ -24,7 +24,7 @@ architecture Behavioral of datapath is
         rst                        : in std_logic;
         en_reg                     : in std_logic;
         m, b, x, y                 : in std_logic_vector (15 downto 0);
-        abs_reg                    : out signed (31 downto 0)
+        line_err                   : out signed (31 downto 0)
         );
     end component;
 
@@ -35,7 +35,10 @@ architecture Behavioral of datapath is
         signal line1_reg, line2_reg, line3_reg, line4_reg, line5_reg, line6_reg, line7_reg, line8_reg : signed (31 downto 0);
         signal do_out1, do_out2, do_out3, do_out4, do_out5, do_out6, do_out7, do_out8 : signed (31 downto 0);
         signal do_out1_reg, do_out2_reg, do_out3_reg, do_out4_reg, do_out5_reg, do_out6_reg, do_out7_reg, do_out8_reg : signed(31 downto 0);
+        signal en_reg : std_logic_vector(1 downto 0);
+        signal k_temp : std_logic_vector(7 downto 0);
 begin
+    en_reg <= oper(1 downto 0); -- oper(0) = '1' means load m & b. oper(1) = '1' means load x & y.
     
     inst_linecalc1 : linecalc port map(
         clk         => clk,
@@ -43,7 +46,7 @@ begin
         en_reg      => en_reg(0),
         m           => m1,
         b           => b1,
-        abs_reg     => out11,
+        line_err     => out11,
         x           => x1,
         y           => y1
         );
@@ -54,7 +57,7 @@ begin
         en_reg      => en_reg(0),
         m           => m1,
         b           => b1,
-        abs_reg     => out12,
+        line_err     => out12,
         x           => x2,
         y           => y2
         );
@@ -65,7 +68,7 @@ begin
         en_reg      => en_reg(0),
         m           => m2,
         b           => b2,
-        abs_reg     => out21,
+        line_err     => out21,
         x           => x1,
         y           => y1
         );
@@ -76,7 +79,7 @@ begin
         en_reg      => en_reg(0),
         m           => m2,
         b           => b2,
-        abs_reg     => out22,
+        line_err     => out22,
         x           => x2,
         y           => y2
         );
@@ -87,7 +90,7 @@ begin
         en_reg      => en_reg(0),
         m           => m3,
         b           => b3,
-        abs_reg     => out31,
+        line_err     => out31,
         x           => x1,
         y           => y1
         );
@@ -98,7 +101,7 @@ begin
         en_reg      => en_reg(0),
         m           => m3,
         b           => b3,
-        abs_reg     => out32,
+        line_err     => out32,
         x           => x2,
         y           => y2
         );
@@ -109,7 +112,7 @@ begin
         en_reg      => en_reg(0),
         m           => m4,
         b           => b4,
-        abs_reg     => out41,
+        line_err     => out41,
         x           => x1,
         y           => y1
         );
@@ -120,7 +123,7 @@ begin
         en_reg      => en_reg(0),
         m           => m4,
         b           => b4,
-        abs_reg     => out42,
+        line_err     => out42,
         x           => x2,
         y           => y2
         );
@@ -131,7 +134,7 @@ begin
         en_reg      => en_reg(0),
         m           => m5,
         b           => b5,
-        abs_reg     => out51,
+        line_err     => out51,
         x           => x1,
         y           => y1
         );
@@ -142,7 +145,7 @@ begin
         en_reg      => en_reg(0),
         m           => m5,
         b           => b5,
-        abs_reg     => out52,
+        line_err     => out52,
         x           => x2,
         y           => y2
         );
@@ -153,7 +156,7 @@ begin
         en_reg      => en_reg(0),
         m           => m6,
         b           => b6,
-        abs_reg     => out61,
+        line_err     => out61,
         x           => x1,
         y           => y1
         );
@@ -164,7 +167,7 @@ begin
         en_reg      => en_reg(0),
         m           => m6,
         b           => b6,
-        abs_reg     => out62,
+        line_err     => out62,
         x           => x2,
         y           => y2
         );
@@ -175,7 +178,7 @@ begin
         en_reg      => en_reg(0),
         m           => m7,
         b           => b7,
-        abs_reg     => out71,
+        line_err     => out71,
         x           => x1,
         y           => y1
         );
@@ -186,7 +189,7 @@ begin
         en_reg      => en_reg(0),
         m           => m7,
         b           => b7,
-        abs_reg     => out72,
+        line_err     => out72,
         x           => x2,
         y           => y2
         );
@@ -197,18 +200,18 @@ begin
         en_reg      => en_reg(0),
         m           => m8,
         b           => b8,
-        abs_reg     => out81,
+        line_err     => out81,
         x           => x1,
         y           => y1
         );   
         
-    inst_linecalc8 : linecalc port map(
+    inst_linecalc8_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
         en_reg      => en_reg(0),
         m           => m8,
         b           => b8,
-        abs_reg     => out82,
+       line_err     => out82,
         x           => x2,
         y           => y2
         ); 
@@ -216,7 +219,7 @@ begin
     --    
     --);
     --semi1 <= std_logic_vector(minimum(to_integer(unsigned(fit_err1)), to_integer(unsigned(fit_err2))));
-    line1 <= ("0000" & out11(31 downto 4)) + ("0000" & out12(31 downto 4));
+    line1 <= ("0000" & out11(31 downto 4)) + ("0000" & out12(31 downto 4)); -- Since it is 8 additions
     line2 <= ("0000" & out21(31 downto 4)) + ("0000" & out22(31 downto 4));
     line3 <= ("0000" & out31(31 downto 4)) + ("0000" & out32(31 downto 4));
     line4 <= ("0000" & out41(31 downto 4)) + ("0000" & out42(31 downto 4));
@@ -257,16 +260,58 @@ begin
             semi4;
     fit_err <= final1 when (to_integer(unsigned(final1)) < to_integer(unsigned(final2))) else
             final2;
+
+    k_temp(1 downto 0) <= "01" when (to_integer(unsigned(fit_err1)) < to_integer(unsigned(fit_err2))) else
+            "10";
+    k_temp(3 downto 2) <= "01" when (to_integer(unsigned(fit_err3)) < to_integer(unsigned(fit_err4))) else
+            "10";
+    k_temp(5 downto 4) <= "01" when (to_integer(unsigned(fit_err5)) < to_integer(unsigned(fit_err6))) else
+            "10";
+    k_temp(7 downto 6) <= "01" when (to_integer(unsigned(fit_err7)) < to_integer(unsigned(fit_err8))) else
+            "10";
+    k_temp(3 downto 0) <=  "00" & k_temp(1 downto 0) when (to_integer(unsigned(semi1)) < to_integer(unsigned(semi2))) else
+            k_temp(3 downto 2) & "00";
+    k_temp(7 downto 4) <= "00" & k_temp(5 downto 4) when (to_integer(unsigned(semi3)) < to_integer(unsigned(semi4))) else
+            k_temp(7 downto 6) & "00";
+    k_temp <= "0000" & k_temp(3 downto 0) when (to_integer(unsigned(final1)) < to_integer(unsigned(final2))) else
+            k_temp(7 downto 4) & "0000";
+    k <= k_temp;
     process (clk)
     begin
         if clk'event and clk='1' then
-            if en_reg(1)='1' then
+            if oper = "0001" then -- load_mb
+                if reg_counter="0001" then
+                    m1 <= do_a(31 downto 16);
+                    b1 <= do_a(15 downto 0);
+                    m2 <= do_b(31 downto 16);
+                    b2 <= do_b(15 downto 0);
+                end if;
+                if reg_counter="0010" then
+                    m3 <= do_a(31 downto 16);
+                    b3 <= do_a(15 downto 0);
+                    m4 <= do_b(31 downto 16);
+                    b4 <= do_b(15 downto 0);
+                end if;
+                if reg_counter="0011" then
+                    m5 <= do_a(31 downto 16);
+                    b5 <= do_a(15 downto 0);
+                    m6 <= do_b(31 downto 16);
+                    b6 <= do_b(15 downto 0);
+                end if;
+                if reg_counter="0100" then
+                    m7 <= do_a(31 downto 16);
+                    b7 <= do_a(15 downto 0);
+                    m8 <= do_b(31 downto 16);
+                    b8 <= do_b(15 downto 0);
+                end if;
+            end if;
+            if oper="0010" then -- oper = "0010" load_xy
                 x1 <= do_a(31 downto 16);
                 y1 <= do_a(15 downto 0);
                 x2 <= do_b(31 downto 16);
                 y2 <= do_b(15 downto 0);
             end if;
-            if en_reg(0)='1' then
+            if en_reg(0)='1' then -- oper = "0001"
                 line1_reg <= line1;
                 line2_reg <= line2;
                 line3_reg <= line3;
@@ -284,30 +329,7 @@ begin
                 do_out7_reg <= do_out7;
                 do_out8_reg <= do_out8;
             end if;
-            if oper="0001" then
-                m1 <= do_a(31 downto 16);
-                b1 <= do_a(15 downto 0);
-                m2 <= do_b(31 downto 16);
-                b2 <= do_b(15 downto 0);
-            end if;
-            if oper="0010" then
-                m3 <= do_a(31 downto 16);
-                b3 <= do_a(15 downto 0);
-                m4 <= do_b(31 downto 16);
-                b4 <= do_b(15 downto 0);
-            end if;
-            if oper="0011" then
-                m5 <= do_a(31 downto 16);
-                b5 <= do_a(15 downto 0);
-                m6 <= do_b(31 downto 16);
-                b6 <= do_b(15 downto 0);
-            end if;
-            if oper="0100" then
-                m7 <= do_a(31 downto 16);
-                b7 <= do_a(15 downto 0);
-                m8 <= do_b(31 downto 16);
-                b8 <= do_b(15 downto 0);
-            end if;
+            
         end if;
     end process;
 end Behavioral;

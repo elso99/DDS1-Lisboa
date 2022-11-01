@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.sim/sim_1/synth/timing/xsim/circuit_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemIN
+INFO: [VRFC 10-311] analyzing module circuit
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module linecalc
+INFO: [VRFC 10-311] analyzing module linecalc_0
+INFO: [VRFC 10-311] analyzing module linecalc_1
+INFO: [VRFC 10-311] analyzing module linecalc_10
+INFO: [VRFC 10-311] analyzing module linecalc_11
+INFO: [VRFC 10-311] analyzing module linecalc_12
+INFO: [VRFC 10-311] analyzing module linecalc_13
+INFO: [VRFC 10-311] analyzing module linecalc_14
+INFO: [VRFC 10-311] analyzing module linecalc_2
+INFO: [VRFC 10-311] analyzing module linecalc_3
+INFO: [VRFC 10-311] analyzing module linecalc_4
+INFO: [VRFC 10-311] analyzing module linecalc_5
+INFO: [VRFC 10-311] analyzing module linecalc_6
+INFO: [VRFC 10-311] analyzing module linecalc_7
+INFO: [VRFC 10-311] analyzing module linecalc_8
+INFO: [VRFC 10-311] analyzing module linecalc_9
+INFO: [VRFC 10-311] analyzing module unimacro_BRAM_TDP_MACRO
+INFO: [VRFC 10-311] analyzing module glbl
