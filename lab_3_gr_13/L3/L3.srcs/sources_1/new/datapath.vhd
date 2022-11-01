@@ -36,7 +36,7 @@ architecture Behavioral of datapath is
         signal do_out1, do_out2, do_out3, do_out4, do_out5, do_out6, do_out7, do_out8 : signed (31 downto 0);
         signal do_out1_reg, do_out2_reg, do_out3_reg, do_out4_reg, do_out5_reg, do_out6_reg, do_out7_reg, do_out8_reg : signed(31 downto 0);
         signal en_reg : std_logic_vector(1 downto 0);
-        signal k_temp : std_logic_vector(7 downto 0);
+        signal k_temp, k_temp2, k_temp3 : std_logic_vector(7 downto 0);
 begin
     en_reg <= oper(1 downto 0); -- oper(0) = '1' means load m & b. oper(1) = '1' means load x & y.
     
@@ -269,13 +269,13 @@ begin
             "10";
     k_temp(7 downto 6) <= "01" when (to_integer(unsigned(fit_err7)) < to_integer(unsigned(fit_err8))) else
             "10";
-    k_temp(3 downto 0) <=  "00" & k_temp(1 downto 0) when (to_integer(unsigned(semi1)) < to_integer(unsigned(semi2))) else
+    k_temp2(3 downto 0) <=  "00" & k_temp(1 downto 0) when (to_integer(unsigned(semi1)) < to_integer(unsigned(semi2))) else
             k_temp(3 downto 2) & "00";
-    k_temp(7 downto 4) <= "00" & k_temp(5 downto 4) when (to_integer(unsigned(semi3)) < to_integer(unsigned(semi4))) else
+    k_temp2(7 downto 4) <= "00" & k_temp(5 downto 4) when (to_integer(unsigned(semi3)) < to_integer(unsigned(semi4))) else
             k_temp(7 downto 6) & "00";
-    k_temp <= "0000" & k_temp(3 downto 0) when (to_integer(unsigned(final1)) < to_integer(unsigned(final2))) else
-            k_temp(7 downto 4) & "0000";
-    k <= k_temp;
+    k_temp3 <= "0000" & k_temp2(3 downto 0) when (to_integer(unsigned(final1)) < to_integer(unsigned(final2))) else
+            k_temp2(7 downto 4) & "0000";
+    k <= k_temp3;
     process (clk)
     begin
         if clk'event and clk='1' then
@@ -292,13 +292,13 @@ begin
                     m4 <= do_b(31 downto 16);
                     b4 <= do_b(15 downto 0);
                 end if;
-                if reg_counter="0011" then
+                if reg_counter="0100" then
                     m5 <= do_a(31 downto 16);
                     b5 <= do_a(15 downto 0);
                     m6 <= do_b(31 downto 16);
                     b6 <= do_b(15 downto 0);
                 end if;
-                if reg_counter="0100" then
+                if reg_counter="1000" then
                     m7 <= do_a(31 downto 16);
                     b7 <= do_a(15 downto 0);
                     m8 <= do_b(31 downto 16);
