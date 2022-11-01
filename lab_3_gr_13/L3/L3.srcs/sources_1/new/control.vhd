@@ -33,9 +33,24 @@ architecture Behavioral of control is
     signal cnt_rst, cnt_en, mem_cnt_rst, mem_cnt_en, mem_start_xy   : std_logic;
     
 begin
-    reg_counter   <= std_logic_vector(to_unsigned(sign_reg_count, reg_counter'length));
+    -- reg_counter   <= std_logic_vector(to_unsigned(sign_reg_count, reg_counter'length));
     mem_addr_a  <= std_logic_vector(to_unsigned(mem_counter, mem_addr_a'length));
     mem_addr_b  <= std_logic_vector(to_unsigned(mem_counter + 1, mem_addr_a'length));
+
+    reg_assert : process(sign_reg_count)
+    begin
+        if sign_reg_count=1 then
+            reg_counter <= "0001";
+        elsif sign_reg_count=2 then
+            reg_counter <= "0010";
+        elsif sign_reg_count=3 then
+            reg_counter <= "0100";
+        elsif sign_reg_count=4 then
+            reg_counter <= "1000";
+        else 
+            reg_counter <= "0000";
+        end if;
+    end process;
     
     count_mb : process(clk) is
     begin
