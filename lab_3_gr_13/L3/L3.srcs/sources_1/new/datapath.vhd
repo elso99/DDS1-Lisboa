@@ -6,9 +6,9 @@ entity datapath is
     port(
         clk : in std_logic;
         rst : in std_logic;
+        en_reg : in std_logic;
         oper : in std_logic_vector(3 downto 0);
-        reg_counter : in std_logic_vector(3 downto 0);
-        --en_reg : in std_logic_vector(1 downto 0);
+        reg_addr : in std_logic_vector(3 downto 0);
         do_a : in std_logic_vector(31 downto 0);
         do_b : in std_logic_vector(31 downto 0);
         fit_err : out std_logic_vector(31 downto 0);
@@ -17,33 +17,33 @@ entity datapath is
 end datapath;
 
 architecture Behavioral of datapath is
-    
+   
     component linecalc
     Port ( 
         clk                        : in std_logic;
         rst                        : in std_logic;
-        en_reg                     : in std_logic;
+        en_reg                     : in std_logic_vector(1 downto 0);
         m, b, x, y                 : in std_logic_vector (15 downto 0);
-        line_err                   : out signed (31 downto 0)
+        line_err                   : out unsigned (31 downto 0)
         );
     end component;
 
         signal m1, m2, m3, m4, m5, m6, m7, m8, b1, b2, b3, b4, b5, b6, b7, b8, x1, y1, x2, y2 : std_logic_vector (15 downto 0);
         signal fit_err1, fit_err2, fit_err3, fit_err4, fit_err5, fit_err6, fit_err7, fit_err8, semi1, semi2, semi3, semi4, final1, final2 : std_logic_vector (31 downto 0);
-        signal out11, out12, out21, out22, out31, out32, out41, out42, out51, out52, out61, out62, out71, out72, out81, out82 : signed (31 downto 0);
-        signal line1, line2, line3, line4, line5, line6, line7, line8 : signed (31 downto 0);
-        signal line1_reg, line2_reg, line3_reg, line4_reg, line5_reg, line6_reg, line7_reg, line8_reg : signed (31 downto 0);
-        signal do_out1, do_out2, do_out3, do_out4, do_out5, do_out6, do_out7, do_out8 : signed (31 downto 0);
-        signal do_out1_reg, do_out2_reg, do_out3_reg, do_out4_reg, do_out5_reg, do_out6_reg, do_out7_reg, do_out8_reg : signed(31 downto 0);
-        signal en_reg : std_logic_vector(1 downto 0);
+        signal out11, out12, out21, out22, out31, out32, out41, out42, out51, out52, out61, out62, out71, out72, out81, out82 : unsigned (31 downto 0);
+        signal line1, line2, line3, line4, line5, line6, line7, line8 : unsigned (31 downto 0);
+        signal line1_reg, line2_reg, line3_reg, line4_reg, line5_reg, line6_reg, line7_reg, line8_reg : unsigned (31 downto 0);
+        signal do_out1, do_out2, do_out3, do_out4, do_out5, do_out6, do_out7, do_out8 : unsigned (31 downto 0);
+        signal do_out1_reg, do_out2_reg, do_out3_reg, do_out4_reg, do_out5_reg, do_out6_reg, do_out7_reg, do_out8_reg : unsigned(31 downto 0);
         signal k_temp, k_temp2, k_temp3 : std_logic_vector(7 downto 0);
+        signal en_reg_in    : std_logic_vector (1 downto 0);
 begin
-    en_reg <= oper(1 downto 0); -- oper(0) = '1' means load m & b. oper(1) = '1' means load x & y.
+
     
     inst_linecalc1 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m1,
         b           => b1,
         line_err     => out11,
@@ -54,7 +54,7 @@ begin
     inst_linecalc1_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m1,
         b           => b1,
         line_err     => out12,
@@ -65,7 +65,7 @@ begin
     inst_linecalc2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m2,
         b           => b2,
         line_err     => out21,
@@ -76,7 +76,7 @@ begin
     inst_linecalc2_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m2,
         b           => b2,
         line_err     => out22,
@@ -87,7 +87,7 @@ begin
     inst_linecalc3 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m3,
         b           => b3,
         line_err     => out31,
@@ -98,7 +98,7 @@ begin
     inst_linecalc3_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m3,
         b           => b3,
         line_err     => out32,
@@ -109,7 +109,7 @@ begin
     inst_linecalc4 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m4,
         b           => b4,
         line_err     => out41,
@@ -120,7 +120,7 @@ begin
     inst_linecalc4_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m4,
         b           => b4,
         line_err     => out42,
@@ -131,10 +131,10 @@ begin
     inst_linecalc5 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m5,
         b           => b5,
-        line_err     => out51,
+        line_err    => out51,
         x           => x1,
         y           => y1
         );
@@ -142,10 +142,10 @@ begin
     inst_linecalc5_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m5,
         b           => b5,
-        line_err     => out52,
+        line_err    => out52,
         x           => x2,
         y           => y2
         );
@@ -153,10 +153,10 @@ begin
     inst_linecalc6 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m6,
         b           => b6,
-        line_err     => out61,
+        line_err    => out61,
         x           => x1,
         y           => y1
         );
@@ -164,10 +164,10 @@ begin
     inst_linecalc6_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m6,
         b           => b6,
-        line_err     => out62,
+        line_err    => out62,
         x           => x2,
         y           => y2
         );
@@ -175,10 +175,10 @@ begin
     inst_linecalc7 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m7,
         b           => b7,
-        line_err     => out71,
+        line_err    => out71,
         x           => x1,
         y           => y1
         );
@@ -186,10 +186,10 @@ begin
     inst_linecalc7_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m7,
         b           => b7,
-        line_err     => out72,
+        line_err    => out72,
         x           => x2,
         y           => y2
         );
@@ -197,10 +197,10 @@ begin
     inst_linecalc8 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m8,
         b           => b8,
-        line_err     => out81,
+        line_err    => out81,
         x           => x1,
         y           => y1
         );   
@@ -208,7 +208,7 @@ begin
     inst_linecalc8_2 : linecalc port map(
         clk         => clk,
         rst         => rst,
-        en_reg      => en_reg(0),
+        en_reg      => en_reg_in,
         m           => m8,
         b           => b8,
        line_err     => out82,
@@ -218,6 +218,7 @@ begin
         --inst_linecalc : linecalc2 port map(
     --    
     --);
+    en_reg_in(0) <= en_reg;
     --semi1 <= std_logic_vector(minimum(to_integer(unsigned(fit_err1)), to_integer(unsigned(fit_err2))));
     line1 <= ("0000" & out11(31 downto 4)) + ("0000" & out12(31 downto 4)); -- Since it is 8 additions
     line2 <= ("0000" & out21(31 downto 4)) + ("0000" & out22(31 downto 4));
@@ -276,42 +277,51 @@ begin
     k_temp3 <= "0000" & k_temp2(3 downto 0) when (to_integer(unsigned(final1)) < to_integer(unsigned(final2))) else
             k_temp2(7 downto 4) & "0000";
     k <= k_temp3;
+    
+    reset : process (clk)
+    begin
+        if clk'event and clk='1' then
+            
+        end if;
+    end process;
+    
     process (clk)
     begin
         if clk'event and clk='1' then
             if oper = "0001" then -- load_mb
-                if reg_counter="0001" then
+                en_reg_in(1) <= '0';
+                if reg_addr="0001" then
                     m1 <= do_a(31 downto 16);
                     b1 <= do_a(15 downto 0);
                     m2 <= do_b(31 downto 16);
                     b2 <= do_b(15 downto 0);
                 end if;
-                if reg_counter="0010" then
+                if reg_addr="0010" then
                     m3 <= do_a(31 downto 16);
                     b3 <= do_a(15 downto 0);
                     m4 <= do_b(31 downto 16);
                     b4 <= do_b(15 downto 0);
                 end if;
-                if reg_counter="0100" then
+                if reg_addr="0100" then
                     m5 <= do_a(31 downto 16);
                     b5 <= do_a(15 downto 0);
                     m6 <= do_b(31 downto 16);
                     b6 <= do_b(15 downto 0);
                 end if;
-                if reg_counter="1000" then
+                if reg_addr="1000" then
                     m7 <= do_a(31 downto 16);
                     b7 <= do_a(15 downto 0);
                     m8 <= do_b(31 downto 16);
                     b8 <= do_b(15 downto 0);
                 end if;
-            end if;
-            if oper="0010" then -- oper = "0010" load_xy
+            elsif oper="0010" then -- oper = "0010" load_xy -might not need this
+                en_reg_in(1) <= '1';
                 x1 <= do_a(31 downto 16);
                 y1 <= do_a(15 downto 0);
                 x2 <= do_b(31 downto 16);
                 y2 <= do_b(15 downto 0);
             end if;
-            if en_reg(0)='1' then -- oper = "0001"
+            if en_reg='1' then -- oper = "0001"
                 line1_reg <= line1;
                 line2_reg <= line2;
                 line3_reg <= line3;
@@ -328,8 +338,45 @@ begin
                 do_out6_reg <= do_out6;
                 do_out7_reg <= do_out7;
                 do_out8_reg <= do_out8;
-            end if;
-            
+            end if;     
+            if rst = '1' then
+                m1 <= (others => '0');
+                m2 <= (others => '0');
+                m3 <= (others => '0');
+                m4 <= (others => '0');
+                m5 <= (others => '0');
+                m6 <= (others => '0');
+                m7 <= (others => '0');
+                m8 <= (others => '0'); 
+                b1 <= (others => '0');                            
+                b2 <= (others => '0');
+                b3 <= (others => '0');
+                b4 <= (others => '0');
+                b5 <= (others => '0');
+                b6 <= (others => '0');
+                b7 <= (others => '0');
+                b8 <= (others => '0');
+                x1 <= (others => '0');
+                x2 <= (others => '0');
+                y1 <= (others => '0');
+                y2 <= (others => '0');
+                line1_reg <= (others => '0');
+                line2_reg <= (others => '0');
+                line3_reg <= (others => '0');
+                line4_reg <= (others => '0');
+                line5_reg <= (others => '0');
+                line6_reg <= (others => '0');
+                line7_reg <= (others => '0');
+                line8_reg <= (others => '0');
+                do_out1_reg <= (others => '0');
+                do_out2_reg <= (others => '0');
+                do_out3_reg <= (others => '0');
+                do_out4_reg <= (others => '0');
+                do_out5_reg <= (others => '0');
+                do_out6_reg <= (others => '0');
+                do_out7_reg <= (others => '0');
+                do_out8_reg <= (others => '0');
+           end if;
         end if;
     end process;
 end Behavioral;

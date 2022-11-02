@@ -36,7 +36,7 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 entity fpga_basicIO is
   port (
     clk                          : in  std_logic;  -- 100MHz clock
-    btnC, btnU, btnL, btnR, btnD : in  std_logic;  -- buttons
+    btnU, btnL,btnC, btnR, btnD       : in  std_logic;  -- buttons
     sw                           : in  std_logic_vector(15 downto 0);  -- switches
     led                          : out std_logic_vector(15 downto 0);  -- leds
     an                           : out std_logic_vector(3 downto 0);  -- display selectors
@@ -50,10 +50,9 @@ architecture Behavioral of fpga_basicIO is
   signal res                                         : std_logic_vector(15 downto 0);
   signal fit_error                                   : std_logic_vector(31 downto 0);
   signal dact                                        : std_logic_vector(3 downto 0);
-  signal btnRinstr                                   : std_logic_vector(4 downto 0);
   signal clk10hz, clk_disp                           : std_logic;
-  signal btnCreg, btnUreg, btnLreg, btnRreg, btnDreg : std_logic;  -- registered input buttons
-  signal sw_reg                                      : std_logic_vector(15 downto 0);  -- registered input switches
+  signal btnUreg, btnLreg, btnRreg, btnDreg          : std_logic;  -- registered input buttons
+  signal sw_reg                                      : std_logic;  -- registered input switches
   signal k                                           : std_logic_vector(7 downto 0);
 
   component disp7
@@ -89,9 +88,8 @@ architecture Behavioral of fpga_basicIO is
 
 begin
   -- led <= sw_reg;
- led(15 downto 8) <= (others => '0');
  led(7 downto 0) <= k;
-
+ led(15 downto 8) <= (others => '0');
   dact <= "1111";
 
   inst_disp7 : disp7 port map(
@@ -113,7 +111,6 @@ begin
     clk10hz  => clk10hz,
     clk_disp => clk_disp);
 
-  btnRinstr <= btnUreg & btnLreg & btnCreg & btnRreg & btnDreg;
   inst_circuit : circuit port map(
     clk     => clk,
     btnR    => btnRreg,
@@ -124,10 +121,10 @@ begin
   process (clk10hz)
   begin
     if rising_edge(clk10hz) then
-      btnCreg <= btnC; btnUreg <= btnU; btnLreg <= btnL;
+      btnUreg <= btnU; btnLreg <= btnL;
       btnRreg <= btnR; btnDreg <= btnD;
-      sw_reg  <= sw;
-      if sw_reg(0)='1' then
+      sw_reg  <= sw(0);
+      if sw_reg='1' then
         res <= fit_error(31 downto 16);
       else
         res <= fit_error(15 downto 0);

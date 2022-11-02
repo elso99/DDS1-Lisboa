@@ -45,11 +45,11 @@ begin
         begin
             wait for 80 ns;
             
-            btnC <= '1' after 20 ns,
-                    '0' after 40 ns; --reset
+            btnC <= '1' after 30 ns,
+                    '0' after 100 ns; --reset
             
-            btnR <= '1' after 80 ns, --begin
-                    '0' after 120 ns;
+            btnR <= '1' after 140 ns, --begin
+                    '0' after 160 ns;
             
             --sw0 <= '1'  after 1000 ns;
             

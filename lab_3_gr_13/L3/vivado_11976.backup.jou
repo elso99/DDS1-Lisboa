@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Nov  2 10:09:40 2022
+# Process ID: 11976
+# Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20296 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_3_gr_13\L3\L3.xpr
+# Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/vivado.log
+# Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3\vivado.jou
+# Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+save_wave_config {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+save_wave_config {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+save_wave_config {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+save_wave_config {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg}
+close [ open C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/linecalc_pair.vhd w ]
+add_files C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/linecalc_pair.vhd
+update_compile_order -fileset sources_1
+save_wave_config {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg}
+close [ open C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/datapath2.vhd w ]
+add_files C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/datapath2.vhd
+update_compile_order -fileset sources_1
+close_sim

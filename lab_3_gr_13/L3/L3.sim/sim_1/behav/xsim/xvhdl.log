@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/circuit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'circuit'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sources_1/new/control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'control'

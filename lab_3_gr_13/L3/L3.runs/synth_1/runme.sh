@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log circuit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit.tcl
+EAStep vivado -log fpga_basicIO.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_basicIO.tcl
