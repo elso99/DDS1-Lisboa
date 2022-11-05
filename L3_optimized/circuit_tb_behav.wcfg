@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="circuit_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="circuit_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="365.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="127"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/circuit_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/btnR" type="logic">
+      <obj_property name="ElementShortName">btnR</obj_property>
+      <obj_property name="ObjectShortName">btnR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/btnC" type="logic">
+      <obj_property name="ElementShortName">btnC</obj_property>
+      <obj_property name="ObjectShortName">btnC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/fit_error" type="array">
+      <obj_property name="ElementShortName">fit_error[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fit_error[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/k" type="array">
+      <obj_property name="ElementShortName">k[7:0]</obj_property>
+      <obj_property name="ObjectShortName">k[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair4/reg_accum" type="array">
+      <obj_property name="ElementShortName">reg_accum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_accum[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_b_delay" type="array">
+      <obj_property name="ElementShortName">reg_b_delay[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_b_delay[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair4/inst_linecalc_1/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair4/inst_linecalc_1/xy" type="array">
+      <obj_property name="ElementShortName">xy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">xy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/curr_state" type="other">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/state_count" type="other">
+      <obj_property name="ElementShortName">state_count</obj_property>
+      <obj_property name="ObjectShortName">state_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/mem_counter" type="other">
+      <obj_property name="ElementShortName">mem_counter</obj_property>
+      <obj_property name="ObjectShortName">mem_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/mem_cnt_en" type="logic">
+      <obj_property name="ElementShortName">mem_cnt_en</obj_property>
+      <obj_property name="ObjectShortName">mem_cnt_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/mem_cnt_rst" type="logic">
+      <obj_property name="ElementShortName">mem_cnt_rst</obj_property>
+      <obj_property name="ObjectShortName">mem_cnt_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair1/inst_linecalc_1/do_mult" type="array">
+      <obj_property name="ElementShortName">do_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_mult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_mult" type="array">
+      <obj_property name="ElementShortName">reg_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair2/inst_linecalc_1/do_mult" type="array">
+      <obj_property name="ElementShortName">do_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_mult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_mult" type="array">
+      <obj_property name="ElementShortName">reg_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair1/xy1" type="array">
+      <obj_property name="ElementShortName">xy1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">xy1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair1/xy2" type="array">
+      <obj_property name="ElementShortName">xy2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">xy2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair1/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair2/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair3/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair4/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair5/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair6/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair7/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair8/reg_mb" type="array">
+      <obj_property name="ElementShortName">reg_mb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_mb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/reg_count" type="other">
+      <obj_property name="ElementShortName">reg_count</obj_property>
+      <obj_property name="ObjectShortName">reg_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/reg_cnt_rst" type="logic">
+      <obj_property name="ElementShortName">reg_cnt_rst</obj_property>
+      <obj_property name="ObjectShortName">reg_cnt_rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc_pair1/do_accum" type="array">
+      <obj_property name="ElementShortName">do_accum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_accum[31:0]</obj_property>
+   </wvobject>
+</wave_config>

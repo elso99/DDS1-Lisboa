@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/L3_optimized/L3_optimized.sim/sim_1/impl/timing/xsim/circuit_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemIN
+INFO: [VRFC 10-311] analyzing module circuit
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module datapath2
+INFO: [VRFC 10-311] analyzing module linecalc
+INFO: [VRFC 10-311] analyzing module linecalc_10
+INFO: [VRFC 10-311] analyzing module linecalc_11
+INFO: [VRFC 10-311] analyzing module linecalc_12
+INFO: [VRFC 10-311] analyzing module linecalc_13
+INFO: [VRFC 10-311] analyzing module linecalc_14
+INFO: [VRFC 10-311] analyzing module linecalc_15
+INFO: [VRFC 10-311] analyzing module linecalc_16
+INFO: [VRFC 10-311] analyzing module linecalc_17
+INFO: [VRFC 10-311] analyzing module linecalc_18
+INFO: [VRFC 10-311] analyzing module linecalc_19
+INFO: [VRFC 10-311] analyzing module linecalc_20
+INFO: [VRFC 10-311] analyzing module linecalc_21
+INFO: [VRFC 10-311] analyzing module linecalc_7
+INFO: [VRFC 10-311] analyzing module linecalc_8
+INFO: [VRFC 10-311] analyzing module linecalc_9
+INFO: [VRFC 10-311] analyzing module linecalc_pair
+INFO: [VRFC 10-311] analyzing module linecalc_pair_0
+INFO: [VRFC 10-311] analyzing module linecalc_pair_1
+INFO: [VRFC 10-311] analyzing module linecalc_pair_2
+INFO: [VRFC 10-311] analyzing module linecalc_pair_3
+INFO: [VRFC 10-311] analyzing module linecalc_pair_4
+INFO: [VRFC 10-311] analyzing module linecalc_pair_5
+INFO: [VRFC 10-311] analyzing module linecalc_pair_6
+INFO: [VRFC 10-311] analyzing module unimacro_BRAM_TDP_MACRO
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Studier/IST/DDS/GIT/DDS1-Lisboa/L3_optimized/L3_optimized.srcs/sim_1/imports/My_files/circuit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'circuit_tb'

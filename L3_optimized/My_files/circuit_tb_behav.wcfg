@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="circuit_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="circuit_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="438.180 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,071.126 ns"></ZoomEndTime>
+      <Cursor1Time time="909.382 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="200"></NameColumnWidth>
+      <ValueColumnWidth column_width="64"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/circuit_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/btnR" type="logic">
+      <obj_property name="ElementShortName">btnR</obj_property>
+      <obj_property name="ObjectShortName">btnR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/m1" type="array">
+      <obj_property name="ElementShortName">m1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/b1" type="array">
+      <obj_property name="ElementShortName">b1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/b7" type="array">
+      <obj_property name="ElementShortName">b7[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b7[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/b8" type="array">
+      <obj_property name="ElementShortName">b8[15:0]</obj_property>
+      <obj_property name="ObjectShortName">b8[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/x1" type="array">
+      <obj_property name="ElementShortName">x1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/y1" type="array">
+      <obj_property name="ElementShortName">y1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/x2" type="array">
+      <obj_property name="ElementShortName">x2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/y2" type="array">
+      <obj_property name="ElementShortName">y2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y2[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/do_out1_reg" type="array">
+      <obj_property name="ElementShortName">do_out1_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_out1_reg[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/line1_reg" type="array">
+      <obj_property name="ElementShortName">line1_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">line1_reg[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1/do_mult" type="array">
+      <obj_property name="ElementShortName">do_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_mult[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1/do_add" type="array">
+      <obj_property name="ElementShortName">do_add[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_add[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1/do_sub" type="array">
+      <obj_property name="ElementShortName">do_sub[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_sub[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1/do_abs" type="array">
+      <obj_property name="ElementShortName">do_abs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_abs[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1_2/do_mult" type="array">
+      <obj_property name="ElementShortName">do_mult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_mult[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1_2/do_add" type="array">
+      <obj_property name="ElementShortName">do_add[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_add[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1_2/do_sub" type="array">
+      <obj_property name="ElementShortName">do_sub[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_sub[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_datapath/inst_linecalc1_2/do_abs" type="array">
+      <obj_property name="ElementShortName">do_abs[31:0]</obj_property>
+      <obj_property name="ObjectShortName">do_abs[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">16</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/curr_state" type="other">
+      <obj_property name="ElementShortName">curr_state</obj_property>
+      <obj_property name="ObjectShortName">curr_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/uut/inst_control/state_count" type="other">
+      <obj_property name="ElementShortName">state_count</obj_property>
+      <obj_property name="ObjectShortName">state_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/fit_error" type="array">
+      <obj_property name="ElementShortName">fit_error[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fit_error[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/circuit_tb/k" type="array">
+      <obj_property name="ElementShortName">k[7:0]</obj_property>
+      <obj_property name="ObjectShortName">k[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

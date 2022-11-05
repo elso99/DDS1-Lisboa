@@ -2,10 +2,10 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Nov  2 16:48:45 2022
-# Process ID: 8560
+# Start of session at: Fri Nov  4 16:00:03 2022
+# Process ID: 11300
 # Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5888 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_3_gr_13\L3\L3.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13352 C:\Studier\IST\DDS\GIT\DDS1-Lisboa\lab_3_gr_13\L3\L3.xpr
 # Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/vivado.log
 # Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3\vivado.jou
 # Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
@@ -13,98 +13,6 @@
 start_gui
 open_project C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.xpr
 update_compile_order -fileset sources_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/fpga_basicIO_tb.vhd w ]
-add_files -fileset sim_1 C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/fpga_basicIO_tb.vhd
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top fpga_basicIO_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-set_property is_enabled false [get_files  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/circuit_tb.vhd]
-set_property is_enabled false [get_files  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/fpga_basicIO_tb.vhd]
-set_property is_enabled true [get_files  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.srcs/sim_1/new/circuit_tb.vhd]
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top circuit_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top circuit [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-launch_simulation
-open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
-source circuit_tb.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 6
-wait_on_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-add_files -fileset constrs_1 -norecurse C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/Handed_out_files/Basys3_Master.xdc
-import_files -fileset constrs_1 -force C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/Handed_out_files/Basys3_Master.xdc
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top fpga_basicIO [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-open_run impl_1
-launch_simulation -mode post-implementation -type timing
-open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
-source circuit_tb.tcl
-close_sim
-launch_simulation -mode post-implementation -type timing
-open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
-source circuit_tb.tcl
-launch_simulation -mode post-synthesis -type timing
-open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
-source circuit_tb.tcl
-set_property is_enabled false [get_files  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg]
-current_sim simulation_3
-close_sim
-launch_simulation -mode post-implementation -type timing
-current_sim simulation_4
-close_sim
-close_sim
-launch_simulation -mode post-implementation -type timing
-source circuit_tb.tcl
-launch_simulation -mode post-synthesis -type timing
-source circuit_tb.tcl
-close_sim
-close_sim
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 6
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-current_design impl_1
-refresh_design
 reset_run impl_1 -prev_step 
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
@@ -119,4 +27,11 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/L3.runs/impl_1/fpga_basicIO.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
+launch_simulation
+source circuit_tb.tcl
+set_property is_enabled true [get_files  C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg]
+close_sim
+launch_simulation
+open_wave_config C:/Studier/IST/DDS/GIT/DDS1-Lisboa/lab_3_gr_13/L3/circuit_tb_behav.wcfg
+source circuit_tb.tcl
+close_sim

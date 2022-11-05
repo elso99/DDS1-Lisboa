@@ -1,0 +1,302 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Nov  4 17:03:10 2022
+| Host         : DESKTOP-SAB7C30 running 64-bit major release  (build 9200)
+| Command      : report_drc -file circuit_drc_routed.rpt -pb circuit_drc_routed.pb -rpx circuit_drc_routed.rpx
+| Design       : circuit
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 51
++----------+------------------+-----------------------------------------------------+------------+
+| Rule     | Severity         | Description                                         | Violations |
++----------+------------------+-----------------------------------------------------+------------+
+| NSTD-1   | Critical Warning | Unspecified I/O Standard                            | 1          |
+| UCIO-1   | Critical Warning | Unconstrained Logical Port                          | 1          |
+| CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| DPIP-1   | Warning          | Input pipelining                                    | 48         |
++----------+------------------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+44 out of 44 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: btnR, clk, done, fit_error[31:0], k[7:0], rst.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+44 out of 44 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: btnR, clk, done, fit_error[31:0], k[7:0], rst.
+Related violations: <none>
+
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair1/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair1/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair1/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair1/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair1/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair1/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair1/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair2/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair2/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair2/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair2/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair2/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair2/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair2/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair3/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair3/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair3/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair3/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair3/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair3/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair3/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair3/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair3/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair3/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair3/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair3/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair4/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair4/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair4/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair4/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair4/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair4/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair4/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair5/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair5/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair5/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair5/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair5/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair5/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair5/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair5/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair5/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair5/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair5/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair5/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair6/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair6/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair6/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair6/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair6/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair6/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair6/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair6/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair6/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair6/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair6/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair6/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair7/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair7/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair7/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair7/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair7/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair7/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair7/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair7/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair7/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair7/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair7/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair7/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair8/inst_linecalc_1/reg_add_reg input inst_datapath/inst_linecalc_pair8/inst_linecalc_1/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair8/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair8/inst_linecalc_1/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair8/inst_linecalc_1/reg_sub_reg input inst_datapath/inst_linecalc_pair8/inst_linecalc_1/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair8/inst_linecalc_2/reg_add_reg input inst_datapath/inst_linecalc_pair8/inst_linecalc_2/reg_add_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair8/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair8/inst_linecalc_2/reg_sub_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP inst_datapath/inst_linecalc_pair8/inst_linecalc_2/reg_sub_reg input inst_datapath/inst_linecalc_pair8/inst_linecalc_2/reg_sub_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+

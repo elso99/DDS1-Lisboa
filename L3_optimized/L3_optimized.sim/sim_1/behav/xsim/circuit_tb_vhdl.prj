@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../L3_optimized.srcs/sources_1/imports/My_files/circuit.vhd" \
+"../../../../L3_optimized.srcs/sources_1/imports/My_files/control.vhd" \
+"../../../../L3_optimized.srcs/sources_1/imports/My_files/datapath2.vhd" \
+"../../../../L3_optimized.srcs/sources_1/imports/My_files/linecalc.vhd" \
+"../../../../L3_optimized.srcs/sources_1/imports/My_files/linecalc_pair.vhd" \
+"../../../../L3_optimized.srcs/sources_1/imports/mems_V2/mem1.vhd" \
+"../../../../L3_optimized.srcs/sim_1/imports/My_files/circuit_tb.vhd" \
+
+# Do not sort compile order
+nosort

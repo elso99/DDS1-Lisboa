@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov  4 17:02:14 2022
+# Process ID: 23056
+# Current directory: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/L3_optimized/L3_optimized.runs/impl_1
+# Command line: vivado.exe -log circuit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source circuit.tcl -notrace
+# Log file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/L3_optimized/L3_optimized.runs/impl_1/circuit.vdi
+# Journal file: C:/Studier/IST/DDS/GIT/DDS1-Lisboa/L3_optimized/L3_optimized.runs/impl_1\vivado.jou
+# Running On: DESKTOP-SAB7C30, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16951 MB
+#-----------------------------------------------------------
+source circuit.tcl -notrace

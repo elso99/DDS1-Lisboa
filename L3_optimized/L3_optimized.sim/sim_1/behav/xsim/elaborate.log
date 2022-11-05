@@ -1,0 +1,33 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot circuit_tb_behav xil_defaultlib.circuit_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package unimacro.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_00="101...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(init_00="1010100111100...]
+Compiling architecture ramb36_v of entity unisim.RAMB36 [\RAMB36(init_00="101010011110001...]
+Compiling architecture bram_v of entity unimacro.BRAM_TDP_MACRO [\BRAM_TDP_MACRO(bram_size="36Kb"...]
+Compiling architecture gen_mem1 of entity xil_defaultlib.MemIN [memin_default]
+Compiling architecture behavioral of entity xil_defaultlib.linecalc [linecalc_default]
+Compiling architecture behavioral of entity xil_defaultlib.linecalc_pair [linecalc_pair_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath2 [datapath2_default]
+Compiling architecture behavioral of entity xil_defaultlib.circuit [circuit_default]
+Compiling architecture behavioral of entity xil_defaultlib.circuit_tb
+Built simulation snapshot circuit_tb_behav
